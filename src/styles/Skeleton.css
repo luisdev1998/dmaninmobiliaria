@@ -1,0 +1,186 @@
+ /********/
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #root{
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .navbar, .footer {
+    display: flex;
+    flex-shrink: 0; /* Esto previene que se encojan si el contenido del body es demasiado grande */
+  }
+
+  .body {
+    display: flex;
+    flex-grow: 1; 
+  }
+
+  .container {
+    box-sizing: border-box; /* Considera el margen en el ancho total del contenedor */
+    width: calc(100%); /* Considera los márgenes en el ancho total del contenedor */
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    gap: 50px; /* Ajusta este valor según lo que necesites */
+    padding-bottom: 5%;
+  }
+  
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* GENERAL */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  /* |||| Flex |||| */
+  .space{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .flex{
+    display: flex;
+  }
+  .w-100{
+    flex: 1;
+  }
+  .w-100-noflex{
+    width: 100%;
+  }
+  .horizontal-adjust{
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .horizontal-center{
+    justify-content: center;
+  }
+  .vertical-center{
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .horizontal-col-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .horizontal-col-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .horizontal-col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* |||| Text |||| */
+  .text-center{
+    text-align: center;
+  }
+  .absolute{
+    position: absolute;
+  }
+
+  .relative{
+    position: relative;
+  }
+  /* |||| Image |||| */
+  .img-autoadjust{
+    max-width: 100%;
+    height: auto;
+  }
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* NAVBAR */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .container ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  .container ul li{
+    display: inline-block;
+  }
+  #btn{
+    display: none;
+  }
+  .navbar-menu{
+    display: none;
+  }
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* BODY */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+  @media screen and (max-width: 1100px) {
+    .horizontal-col-4{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .horizontal-col-4{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .horizontal-col-3{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .space{
+      padding-right: 3%;
+      padding-left: 3%;
+    }
+
+    .navbar-menu{
+      display: block;
+      width: 2rem;
+      cursor: pointer;
+    }
+    input[type="checkbox"][id="btn"]:checked ~ .links { 
+      max-height: 500px; 
+      transition: max-height .5s ease-out;
+    }
+    .links{
+      max-height: 0; 
+      overflow: hidden; 
+      transition: max-height .5s ease-out;
+    }
+    .links ul{ 
+      margin-top: 1rem; 
+      display: flex; 
+      flex-direction: column; 
+      gap: 1.5rem; 
+      list-style: disc 
+    }
+    .links ul li{ 
+      display: block; 
+      transition: 0.2s 
+    }
+
+    .links {
+      width: 100%;
+    }
+    .navbar .container{
+      gap: 0px !important;
+    }
+
+
+
+    .horizontal-col-4{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .horizontal-col-3{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .horizontal-col-2{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
