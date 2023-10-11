@@ -1,43 +1,157 @@
   @font-face {
-    font-family: 'PrincipalFontLigth';
-    src: url('../assets/fonts/PrincipalFontLigth.ttf') format('truetype');
+    font-family: 'font-content-bold';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'PrincipalFontBold';
-    src: url('../assets/fonts/PrincipalFontBold.otf') format('opentype');
-  }
-  @font-face {
-    font-family: 'SecondaryFontLigth';
-    src: url('../assets/fonts/SecondaryFontLigth.ttf') format('truetype');
+    font-family: 'font-content-light';
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
   }
   :root {
-    --primary-font-ligth: 'PrincipalFontLigth', sans-serif;
-    --primary-font-bold: 'PrincipalFontBold', sans-serif;
-    --secondary-font-ligth: 'SecondaryFontLigth', sans-serif;
+    --font-content-bold: 'font-content-bold', sans-serif;
+    --font-content-light: 'font-content-light', sans-serif;
 
-    --primary-color-1: #d62223;
+    --primary-color-1: #f12d2d;
     --primary-color-2: #992822;
-    --primary-color-3: #84211b;
-    --primary-color-4: #6e1b15;
-    --primary-color-5: #561511;
-    --primary-color-6: #41100c;
-    --secondary-color-1: #c6c6c6;
-    --secondary-color-2: #ababab;
-    --secondary-color-3: #8f8f8f;
-    --secondary-color-4: #707070;
-    --secondary-color-5: #545454;
-    --secondary-color-6: #383838;
+    --primary-color-3: #545454;
+    --primary-color-4: #f5f5f5;
   }
   body {
-    font-family: var(--primary-font-ligth);
+    font-family: var(--font-content-light);
   }
   a{
    text-decoration: none;
    color: white;
   }
-  /* NAVBAR */
-  .navbar, .footer{
+  button{
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  thead{
     background-color: var(--primary-color-2);
+  } 
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+  #Home{
+    height: 500px;
+  }
+  #Proyectos{
+    background-color: var(--primary-color-4);
+  }
+  #Servicios{
+    background-color: white;
+  }
+  #Testimonios{
+    background-color: var(--primary-color-1);
+  }
+  #contactos{
+    background-color: var(--primary-color-4);
+  }
+  #Redes{
+    background-color: var(--primary-color-2);
+  }
+
+  #ProyectoInformacion{
+    background-color: var(--primary-color-4);
+  }
+  #ProyectoDescripcion{
+    background-color: var(--primary-color-4);
+  }
+  #ProyectoDepartamentos{
+    background-color: var(--primary-color-4);
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  .text-title{
+    font-family: var(--font-content-bold);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .text-content-bold{
+    font-family: var(--font-content-bold);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .text-content{
+    font-family: var(--font-content-light);
+    font-size: 1rem;
+  }
+  .text-space{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 3px;
+  }
+  .red{
+    background-color: var(--primary-color-1);
+  }
+  .white{
+    background-color: white;
+  }
+  .black{
+    background-color: var(--primary-color-3);
+  }
+  .text-red{
+    color: var(--primary-color-1);
+  }
+  .text-white{
+    color: white;
+  }
+  .text-black{
+    color: var(--primary-color-3);
+  }
+  .btn{
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  .carousel{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color-2);
+  }
+  .slick-dots li.slick-active div {
+    background: var(--primary-color-1);
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-30px);
+    }
+    20% {
+      transform: translateY(0);
+    }
+  } 
+  .bounce {
+    animation: bounce 5s infinite; /* 5s es la duración total de una iteración */
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  /* NAVBAR */
+  .navbar{
+    background-color: var(--primary-color-2);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .footer{
+    background-color: var(--primary-color-3);
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -46,197 +160,40 @@
   .navbar li a{
     cursor: pointer;
   }
-
-  /**********/
-  .title-home{
-    font-size: 4rem;
-    width: 100%;
-  }
-  .title-home label{
-    font-family: var(--primary-font-bold);
-    color: var(--primary-color-1);
-  }
-
-  .title-secondary{
-    font-size: 2.5rem;
-    font-family: var(--primary-font-bold);
-    color: var(--primary-color-1);
-    margin-bottom: 5%;
-  }
-
-  /**********/
-  .img-polygon{
-    -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
-    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
-  }
-  .img-projects{
-    height: 300px;
-    width: 100%;
-  }
-  .img-title-projects{
-    font-size: 1.5rem;
-    color: var(--secondary-color-5);
-    font-family: var(--secondary-font-ligth);
-  }
-
-  /***********/
-
-  .title-clients{
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-  }
-  .description-clients{
-    color: var(--secondary-color-3);
-    font-size: 1.5rem;
-  }
-
-  /***********/
-
-  .img-contact{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-  .img-title-contact{
-    font-size: 1.5rem;
-    color: var(--secondary-color-5);
-    font-family: var(--secondary-font-ligth);
-  }
-
-  /****** QUIENES SOMOS *****/
-  .Nosotros{
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  /* Nuestros proyectos */
+  
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  
+  .card{
+    background-color: white;
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: -1px 10px 30px -4px rgba(0, 0, 0, 0.2)
   }
-  .quienessomos-card-container{
-    position: relative;
-    left: 80px;
-    z-index: 1;
-  }
-  .quienessomos-card{
-    background-color: #f5f5f5;
-    padding: 8%;
-  }
-  .quienessomos-card h1{
-    font-size: 2rem;
-    color: var(--primary-color-1);
-  }
-  .quienessomos-card p{
-    line-height: 2;
-    text-align: justify;
-  }
-  .quienessomos-img{
-    position: relative;
-    width: 500px;
-    height: 600px;
-    right: 80px;
-  }
-  /****** EXPERIENCIA *****/
-  .experiencia-card{
-    background-color: #fafafa;
-  }
-  .experiencia-img{
-    width: 100%;
-    height: 400px;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-  }
-  .experiencia-card h1{
+  .card-item{
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 200px;
   }
-  /***** MISION VISION *****/
-  .mv{
-    gap: 1rem;
-  }
-  .mv-img{
-    width: 100%;
-    height: 300px;
-  }
-  .mv-descripcion{
-    text-align: justify;
-  }
-  .mv-descripcion h1{
-    color: var(--primary-color-1);
-    text-align: center;
-  }
+
+  /***********/
+
+
 
   @media screen and (max-width: 1100px) {
-    .quienessomos-card-container{
-      left: 30px;
-    }
-    .quienessomos-card p{
-      line-height: 2;
-      font-size: 0.9rem;
-    }
-    .quienessomos-img{
-      right: 30px;
-      width: 400px;
-    }
+    
   }
   @media screen and (max-width: 900px) {
-    .quienessomos-card-container{
-      left: 20px;
-    }
-    .quienessomos-card p{
-      line-height: 1.5;
-      font-size: 0.8rem;
-    }
-    .quienessomos-img{
-      right: 20px;
-      width: 350px;
-      height: 500px;
-    }
+    
   }
   @media screen and (max-width: 650px) {
-    .title-secondary{
-      font-size: 2rem;
-    }
-    .title-home{
-      font-size: 4rem;
-      width: 100%;
-    }
-    .title-clients{
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .description-clients{
-      font-size: 1rem;
-    }
-    .img-contact{
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-    }
-    /****************** QUIENES SOMOS ******************/
-    .Nosotros{
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .quienessomos-card-container{
-      margin: 2%;
-      position: absolute;
-      left: 0px;
-    }
-    .quienessomos-card{
-      line-height: 1.2;
-      font-size: 0.8rem;
-      background: rgba(248, 248, 248, 0.748);
-    }
-    .quienessomos-card p{
-      line-height: 1.5;
-      font-size: 0.8rem;
-      color: black;
-    }
-    .quienessomos-img{
-      width: 400px;
-      right: 0px;
-      height: 400px;
-    }
+    
   }
 
   

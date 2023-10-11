@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 function Header() {
     return(
         <div className='navbar'>
-          <div className='container flex horizontal-adjust vertical-center space'>
-            <div className='w-100'>logo</div>
+          <div className='container flex horizontal-adjust space-header-footer' style={{alignItems:"center"}}>
+            <div style={{flex: 1}}>logo</div>
             <div className='navbar-menu'>
               <label htmlFor="btn">
                 <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -16,7 +16,7 @@ function Header() {
               <ul>
                 <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/quienes-somos">Quienes Somos</Link></li>
-                <li>Constructora</li>
+                <li><Link to="/constructora">Constructora</Link></li>
               </ul>
             </div>
           </div>

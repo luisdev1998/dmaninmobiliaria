@@ -13,7 +13,7 @@ function Quienessomos(){
                     src="https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg"
                 />
             </div>
-            <div>
+            <div className="space">
                 <div className="flex horizontal-adjust horizontal-center horizontal-col-3">
                     <div className='experiencia-card'>
                         <img className='experiencia-img'
@@ -38,7 +38,7 @@ function Quienessomos(){
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="space">
                 <div className="flex horizontal-adjust horizontal-center horizontal-col-2">
                     <div className="flex mv">
                         <div className="w-100">
