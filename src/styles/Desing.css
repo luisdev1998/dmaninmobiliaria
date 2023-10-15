@@ -14,6 +14,8 @@
     --primary-color-2: #992822;
     --primary-color-3: #545454;
     --primary-color-4: #f5f5f5;
+    --primary-color-5: #adadad;
+    --primary-color-6: #ebebeb;
   }
   body {
     font-family: var(--font-content-light);
@@ -40,11 +42,19 @@
     text-align: center;
     padding: 8px;
   }
+  select{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px var(--primary-color-2);
+    color: var(--primary-color-2);
+    font-weight: bold;
+    background-color: transparent;
+  }
 
   #Home{
     height: 500px;
   }
-  #Proyectos{
+  #Lotes{
     background-color: var(--primary-color-4);
   }
   #Servicios{
@@ -59,14 +69,7 @@
   #Redes{
     background-color: var(--primary-color-2);
   }
-
-  #ProyectoInformacion{
-    background-color: var(--primary-color-4);
-  }
-  #ProyectoDescripcion{
-    background-color: var(--primary-color-4);
-  }
-  #ProyectoDepartamentos{
+  #LotesLista{
     background-color: var(--primary-color-4);
   }
   /**********************************/
@@ -76,6 +79,7 @@
     font-family: var(--font-content-bold);
     font-weight: bold;
     font-size: 2rem;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
   }
   .text-content-bold{
     font-family: var(--font-content-bold);
@@ -91,9 +95,20 @@
     margin-bottom: 30px;
     width: 200px;
     height: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  }
+  .space-content{
+    height: 3px;
+    background-color: var(--primary-color-6);
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .red{
     background-color: var(--primary-color-1);
+  }
+  .dark-red{
+    background-color: var(--primary-color-2);
   }
   .white{
     background-color: white;
@@ -110,10 +125,16 @@
   .text-black{
     color: var(--primary-color-3);
   }
+  .text-gray{
+    color: var(--primary-color-5)
+  }
   .btn{
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   }
+
+  
   /**********************************/
   /**********************************/
   /**********************************/
@@ -163,27 +184,36 @@
   /**********************************/
   /**********************************/
   /**********************************/
-  /* Nuestros proyectos */
+  /* lotes */
   
-  /**********************************/
-  /**********************************/
-  /**********************************/
-  
-  .card{
+  .lote-card{
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    box-shadow: -1px 10px 30px -4px rgba(0, 0, 0, 0.2)
+    padding: 15px;
   }
-  .card-item{
-    text-align: center;
-    flex-grow: 1;
-    flex-basis: 200px;
+  .lote-card img{
+    border-radius: 10px;
   }
-
-  /***********/
-
+  .card-estado{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .metraje{
+    padding: 1px 8px 1px 8px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
 
 
   @media screen and (max-width: 1100px) {

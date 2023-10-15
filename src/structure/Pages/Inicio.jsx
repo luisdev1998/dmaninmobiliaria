@@ -9,57 +9,21 @@ function Inicio(props){
     return(
         <div>
           <div id='Home'>
-            <Carousel images={Data.inicio}/>
+            <Carousel images={Data.InicioPage}/>
           </div>
           {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Proyectos' className='space-container'>
+          <div id='Lotes' className='space-container'>
             <div className='text-title' style={{textAlign:"center"}}> 
               <label className="text-black">Nuestros </label>
-              <label className="text-red">Proyectos</label>
+              <label className="text-red">Lotes</label>
             </div>
             <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
               <div className="text-space red"></div>
             </div>
-
-            <div className='flex horizontal-adjust horizontal-center horizontal-col-4'>
-              {
-                Data.proyectos.map((element,index) => {
-                  if(element.informacion.habilitado && element.informacion.mostrarInicio){
-                    return(
-                      <a style={{flex: 1}} key={index} href={"lotes"}>
-                        <img style={{width:"100%",height:"400px"}} src={element.inicio.img}></img>
-                        {/* <div>
-                          <div className="proyecto-estado" style={{position:"absolute"}}>
-                            <label className="text-white">{element.informacion.estado}</label>
-                          </div>
-                          <img style={{width:"100%",height:"300px"}} src={element.inicio.img}></img>
-                        </div>
-                        <div style={{border:"0.5px solid #ababab", padding:"10px", background: "white"}}>
-                          <div className='text-content-bold text-red' style={{textAlign: "center", marginBottom:"10px"}}>
-                            <label>{element.inicio.titulo}</label>
-                          </div>
-                          <div className='text-content text-black' style={{textAlign: "center", marginBottom:"10px"}}>
-                            <label>{element.inicio.departamento}</label>
-                          </div>
-                          <div className='text-content text-black' style={{textAlign: "center", marginBottom:"10px"}}>
-                            <FontAwesomeIcon icon={faRulerVertical} style={{fontSize: 15}} />
-                            <label> {element.inicio.area}</label>
-                            <label> - </label>
-                            <FontAwesomeIcon icon={faBed} style={{fontSize: 15}} />
-                            <label> {element.inicio.dormitorios}</label>
-                          </div>
-                          <div className='text-black' style={{textAlign: "center", marginBottom:"10px"}}>
-                            <label>Desde: </label> <label className="text-content-bold">{element.inicio.precio}</label>
-                          </div>
-                          <div>
-                            <div className='btn red' style={{textAlign: "center"}}>Ver proyecto</div>
-                          </div>
-                        </div> */}
-                      </a>
-                    )
-                  }
-                })
-              }
+            <div className='flex horizontal-adjust horizontal-center'>
+              <a style={{flex: 1}} href={"lotes"}>
+                  <img style={{width:"100%",height:"400px"}} src="../../src/assets/example.jpg"></img>
+              </a>
             </div>
           </div>
           {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
