@@ -11,16 +11,23 @@ function LoteInfo(props){
     return(
         <div>
             <div id="LoteInfo">
+                <div className="space-container flex horizontal-select-col-2" style={{position:"absolute",width:"80%"}}>
+                    <div style={{width:"auto"}}>
+                        <label className="text-title text-red" style={{fontSize:"2rem"}}>Conoce el Proyecto</label>
+                        <br></br>
+                        <label className="text-title text-white" style={{fontSize:"3rem"}}>{Info.informacion.titulo}</label>
+                    </div>
+                    <iframe
+                            height="400" 
+                            src={Info.page.video} 
+                            title="asd" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowFullScreen
+                            style={{border:"none", minWidth:"100%"}}
+                        >
+                    </iframe>
+                </div>
                 <img src={Info.page.fondo} style={{width: '100%', height: '500px'}}/>
-                <iframe 
-                width="887" 
-                height="499" 
-                src="https://www.youtube.com/embed/8EbjtG5_FkA" 
-                title="asd" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen
-                >
-                </iframe>
             </div>
         </div>
     )

@@ -110,7 +110,7 @@ const lotes = [
             distrito: 4,
             direccion: 'Dirección ejemplo 1',
             img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-            titulo: 'Proyecto 1',
+            titulo: 'El bosque de pimentel bosque de pimentel',
             descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
             estado: "Estreno"
         },

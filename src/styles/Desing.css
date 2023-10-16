@@ -72,6 +72,11 @@
   #LotesLista{
     background-color: var(--primary-color-4);
   }
+  #LoteInfo{
+    position: re;
+    display: flex;
+    align-items: center;
+  }
   /**********************************/
   /**********************************/
   /**********************************/
