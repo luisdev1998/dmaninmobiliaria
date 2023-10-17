@@ -35,8 +35,8 @@
 
   /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   .space-container{
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
   }
@@ -56,16 +56,19 @@
     justify-content: center;
   }
   .horizontal-col-4{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   .horizontal-col-2{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .horizontal-col-3{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -74,11 +77,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 10px;
-  }
-  .horizontal-select-col-2{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 30px;
   }
   /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
@@ -150,9 +148,6 @@
       grid-template-columns: repeat(1, 1fr);
     }
     .horizontal-select-col-4{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .horizontal-select-col-2{
       grid-template-columns: repeat(1, 1fr);
     }
   }
