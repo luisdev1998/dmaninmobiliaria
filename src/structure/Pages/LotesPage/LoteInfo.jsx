@@ -52,16 +52,32 @@ function LoteInfo(props){
                 </div>
             </div>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
+            <div>
+
+            </div>
+            {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
+            <div id="LoteDescuentos" className='space-container'>
+                <div className='text-title' style={{textAlign:"center"}}> 
+                    <label className="text-title text-red">Descuentos </label>
+                    <label className="text-title text-black">Ideales</label>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+                    <div className="text-space red"></div>
+                </div>
+                <div style={{textAlign:"center"}}>
+                    <img src="/promocion.PNG" style={{width:"80%"}}/>
+                </div>
+            </div>
+            {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
             <div id='LoteFotos' className='space-container'>
                 <div className='text-title' style={{textAlign:"center"}}> 
-                    <label className="text-title text-red">Algunas</label>
-                    <label className="text-black">Imágenes</label>
+                    <label className="text-title text-red">Conócenos</label>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
                     <div className="text-space red"></div>
                 </div>
 
-                <div className='flex horizontal-adjust horizontal-center horizontal-col-4'>
+                <div className='flex horizontal-adjust horizontal-center horizontal-col-3'>
                 {
                     Info.fotos.map((element,index) => {
                         return(

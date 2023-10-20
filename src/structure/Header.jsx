@@ -3,7 +3,10 @@ function Header() {
     return(
         <div className='navbar'>
           <div className='container flex horizontal-adjust space-header-footer' style={{alignItems:"center"}}>
-            <div style={{flex: 1}}>logo</div>
+            <div style={{flex: 1}}>
+              <img onClick={()=> window.open("/","_self")} className='logo-header-grande' src='/logo-grande-blanco.png'/>
+              <img onClick={()=> window.open("/","_self")} className='logo-header-corto' src='/logo-blanco.png'/>
+            </div>
             <div className='navbar-menu'>
               <label htmlFor="btn">
                 <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -14,9 +17,9 @@ function Header() {
             <input id='btn' name='btn' type='checkbox'/>
             <div className='links'>
               <ul>
-                <li><Link to="/">Inicio</Link></li>
-                <li><Link to="/quienes-somos">Quienes Somos</Link></li>
-                <li><Link to="/constructora">Constructora</Link></li>
+                <li><Link className="text-content" to="/">Inicio</Link></li>
+                <li><Link className="text-content" to="/Lotes">Lotes</Link></li>
+                <li><Link className="text-content" to="/constructora">Nosotros</Link></li>
               </ul>
             </div>
           </div>

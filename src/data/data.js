@@ -59,7 +59,7 @@ const distritos = [
     },
     {
         id: 2,
-        nombre: 'Chongoyape',
+        nombre: 'Pimentel',
         provincia: 1
     },
     {
@@ -106,16 +106,16 @@ const lotes = [
         informacion: {
             habilitado: true,
             departamento: 1,
-            provincia: 2,
-            distrito: 4,
+            provincia: 1,
+            distrito: 2,
             direccion: 'Dirección ejemplo 1',
-            img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
+            img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0001.jpg',
             titulo: 'El bosque de pimentel bosque de pimentel',
             descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
             estado: "Estreno"
         },
         page:{
-            fondo: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
+            fondo: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0001.jpg',
             video: 'https://www.youtube.com/embed/8EbjtG5_FkA'
         },
         metrajes:[
@@ -159,44 +159,47 @@ const lotes = [
             {
                 id: 1,
                 titulo: "Calles afirmadas alles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0002.jpg'
             },
             {
                 id: 2,
                 titulo: "Calles afirmadas alles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0003.jpg'
             },
             {
                 id: 3,
                 titulo: "Calles afirmadas alles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0004.jpg'
             },
             {
                 id: 4,
                 titulo: "Calles afirmadas alles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0005.jpg'
             },
             {
                 id: 5,
-                titulo: "Calles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                titulo: "Calles afirmadas alles afirmadas",
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0006.jpg'
             },
             {
                 id: 6,
-                titulo: "Calles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                titulo: "Calles afirmadas alles afirmadas",
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0007.jpg'
             },
             {
                 id: 7,
                 titulo: "Calles afirmadas",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0008.jpg'
+            },
+            {
+                id: 8,
+                titulo: "Calles afirmadas",
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0009.jpg'
+            },
+            {
+                id: 9,
+                titulo: "Calles afirmadas",
+                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0010.jpg'
             }
         ],
         promociones: [

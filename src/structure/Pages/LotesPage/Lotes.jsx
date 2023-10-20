@@ -125,7 +125,7 @@ function Lotes(props){
                     {
                         filterLotes.map((element, index) => {
                             return(
-                                <a key={index} className="lote-card" style={{display:"flex",flexDirection:"column",gap:"5px"}}>
+                                <a key={index} className="lote-card white" style={{display:"flex",flexDirection:"column",gap:"5px"}} onClick={() => window.open("/lotes/"+element.id,"_self")}>
                                     <div className="card-estado dark-red">
                                         <label className="text-content text-white" style={{fontSize: "0.8rem"}}>{element.informacion.estado}</label>
                                     </div>

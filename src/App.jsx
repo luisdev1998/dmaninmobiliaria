@@ -1,6 +1,7 @@
 import Data from './data/data.js'
 import Header from './structure/Header.jsx';
 import Footer from './structure/Footer.jsx';
+import FloatingButton from './structure/FloatingButton.jsx';
 import Inicio from './structure/Pages/Inicio.jsx';
 import Lotes from './structure/Pages/LotesPage/Lotes.jsx';
 import QuienesSomos from './structure/Pages/Quienessomos.jsx';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/constructora" element={<Constructora />} />
       </Routes>
       <Footer></Footer>
+      <FloatingButton></FloatingButton>
     </Router>
   )
 }

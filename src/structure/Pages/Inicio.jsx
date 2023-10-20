@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBed, faRulerVertical, faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope, faMap } from '@fortawesome/free-solid-svg-icons';
 import Carousel from "../../components/Carousel";
 
 function Inicio(props){
@@ -91,34 +90,7 @@ function Inicio(props){
             </div>
           </div>
           {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Redes' className='space-container'>
-            <div className='text-title' style={{textAlign:"center"}}>
-              <label className="text-white">Nuestras Redes</label>
-            </div>
-            <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <div className="text-space white"></div>
-            </div>
-            <div className='text-white' style={{textAlign: "center"}}>
-                <a style={{textAlign: "center"}} target="_blank" href="#">
-                  <FontAwesomeIcon icon={faFacebook} style={{fontSize: 60, paddingRight:"5%"}} />
-                </a>
-                <a style={{textAlign: "center"}} target="_blank" href="#">
-                  <FontAwesomeIcon icon={faYoutube} style={{fontSize: 60, paddingRight:"5%"}} />
-                </a>
-                <a style={{textAlign: "center"}} target="_blank" href="#">
-                  <FontAwesomeIcon icon={faLinkedin} style={{fontSize: 60}} />
-                </a>
-            </div>
-          </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <a id="Whatsapp" 
-          href=""
-          style={{position: "fixed",bottom: "0", right:"0"}}>
-            <img 
-            width={150}
-            height={150}
-            src="https://static.vecteezy.com/system/resources/thumbnails/024/273/818/small/whatsapp-logo-free-png.png" className="bounce"/>
-          </a>
+          
 
         </div>
     )
