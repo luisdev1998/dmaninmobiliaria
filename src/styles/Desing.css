@@ -1,0 +1,332 @@
+  @font-face {
+    font-family: 'font-content-bold';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'font-content-light';
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
+  }
+  :root {
+    --font-content-bold: 'font-content-bold', sans-serif;
+    --font-content-light: 'font-content-light', sans-serif;
+
+    --primary-color-1: #c70f0f;
+    --primary-color-2: #bb0000;
+    --primary-color-3: #383838;
+    --primary-color-4: #f5f5f5;
+    --primary-color-5: #adadad;
+    --primary-color-6: #ebebeb;
+  }
+  body {
+    font-family: var(--font-content-light);
+  }
+  a{
+   text-decoration: none;
+   color: white;
+  }
+  button{
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  thead{
+    background-color: var(--primary-color-2);
+  } 
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  select{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px var(--primary-color-2);
+    color: var(--primary-color-2);
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  #Whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0
+  }
+  #Home{
+    height: 500px;
+  }
+  #Lotes{
+    background-color: var(--primary-color-4);
+  }
+  #Servicios{
+    background-color: white;
+  }
+  #Testimonios{
+    background-color: var(--primary-color-1);
+  }
+  #contactos{
+    background-color: var(--primary-color-4);
+  }
+  #Redes{
+    background-color: var(--primary-color-2);
+  }
+  #LotesLista{
+    background-color: var(--primary-color-4);
+  }
+  #LoteInfo{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  #LoteFotos{
+    background-color: var(--primary-color-4);
+  }
+  #LoteFotos .foto{
+    background-color: var(--primary-color-1);
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+  }
+  #LoteFotos a{
+    display: block;
+    position: relative;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+  }
+  #LoteFotos .titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ancho completo */
+    height: 100%; /* Altura completa */
+    display: flex;
+    align-items: center;  /* Centra el contenido verticalmente */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    opacity: 0;  /* Inicia con opacidad 0 para que no se muestre inicialmente */
+    transition: opacity 0.3s;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+  }
+  #LoteFotos .titulo label {
+    text-align: center;
+    padding: 10px;
+  }
+  #LoteFotos a:hover img{
+    opacity: 0.1;
+    transition:  0.3s;
+  }
+  #LoteFotos a:hover .titulo{
+    opacity: 1;
+  }
+  #LotePromociones{
+    background-color: var(--primary-color-1);
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  .links li{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .links li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: white;
+  }
+  .links:hover{
+    color: white;
+  }
+  .links li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  .text-title-banner{
+    font-family: var(--font-content-bold);
+    font-weight: bold;
+    font-size: 3rem;
+    filter: drop-shadow(0px 5px 4px rgba(0,0,0,0.25));
+  }
+  .text-title{
+    font-family: var(--font-content-bold);
+    font-weight: bold;
+    font-size: 2rem;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+  }
+  .text-content-bold{
+    font-family: var(--font-content-bold);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .text-content{
+    font-family: var(--font-content-light);
+    font-size: 1rem;
+  }
+  .text-space{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  }
+  .space-content{
+    height: 3px;
+    background-color: var(--primary-color-6);
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .red{
+    background-color: var(--primary-color-1);
+  }
+  .dark-red{
+    background-color: var(--primary-color-2);
+  }
+  .white{
+    background-color: white;
+  }
+  .black{
+    background-color: var(--primary-color-3);
+  }
+  .text-red{
+    color: var(--primary-color-1);
+  }
+  .text-white{
+    color: white;
+  }
+  .text-black{
+    color: var(--primary-color-3);
+  }
+  .text-gray{
+    color: var(--primary-color-5)
+  }
+  .btn{
+    padding: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  }
+
+  
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  .carousel{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color-2);
+  }
+  .slick-dots li.slick-active div {
+    background: var(--primary-color-1);
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-30px);
+    }
+    20% {
+      transform: translateY(0);
+    }
+  } 
+  .bounce {
+    animation: bounce 5s infinite; /* 5s es la duración total de una iteración */
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  /* NAVBAR */
+  .navbar{
+    background-color: var(--primary-color-2);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .footer{
+    background-color: var(--primary-color-3);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .navbar li a{
+    cursor: pointer;
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+  /* lotes */
+  
+  .lote-card{
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+  }
+  .lote-card img{
+    border-radius: 10px;
+  }
+  .card-estado{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  .metraje{
+    padding: 1px 8px 1px 8px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  /**********************************/
+  /**********************************/
+  /**********************************/
+
+
+  @media screen and (max-width: 1100px) {
+    .text-title-banner{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 900px) {
+  }
+  @media screen and (max-width: 650px) {
+    #Whatsapp img{
+      width: 100px;
+      height: 100px;
+    }
+    .text-title-banner{
+      text-align: center;
+      font-size: 1.5rem;
+    }  
+    .text-title{
+      font-size: 1.2rem;
+    }
+    .text-space{
+      margin-top: 8px;
+      margin-bottom: 30px;
+      width: 150px;
+      height: 2px;
+      filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    }
+  }
+
+  

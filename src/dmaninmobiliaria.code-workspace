@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Documents/JavaScript/Projects/portafolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dmaninmobiliaria"
+	}
+}
