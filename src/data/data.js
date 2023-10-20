@@ -126,79 +126,79 @@ const lotes = [
         beneficios: [
             {
                 id: 1,
-                titulo: "Agua",
+                titulo: "AGUA",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             },
             {
                 id: 2,
-                titulo: "Parque",
+                titulo: "PARQUE",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             },
             {
                 id: 3,
-                titulo: "Desague",
+                titulo: "DESAGUE",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             },
             {
                 id: 4,
-                titulo: "Veredas",
+                titulo: "VEREDAS",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             },
             {
                 id: 5,
-                titulo: "Luz Trifásica",
+                titulo: "LUZ TRIFÁSICA",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             },
             {
                 id: 6,
-                titulo: "Calles afirmadas",
+                titulo: "CALLES AFIRMADAS",
                 img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
             }
         ],
         fotos: [
             {
                 id: 1,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Misión y Visión",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0002.jpg'
             },
             {
                 id: 2,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Valores",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0003.jpg'
             },
             {
                 id: 3,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Beneficios",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0004.jpg'
             },
             {
                 id: 4,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Planos",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0005.jpg'
             },
             {
                 id: 5,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Mapa",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0006.jpg'
             },
             {
                 id: 6,
-                titulo: "Calles afirmadas alles afirmadas",
+                titulo: "Referencias",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0007.jpg'
             },
             {
                 id: 7,
-                titulo: "Calles afirmadas",
+                titulo: "Referencias",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0008.jpg'
             },
             {
                 id: 8,
-                titulo: "Calles afirmadas",
+                titulo: "Título de Propiedad",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0009.jpg'
             },
             {
                 id: 9,
-                titulo: "Calles afirmadas",
+                titulo: "Copia Literal",
                 img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0010.jpg'
             }
         ],

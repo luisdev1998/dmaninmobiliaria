@@ -48,7 +48,7 @@ function LoteInfo(props){
                     </div>
                 </div>
                 <div style={{backgroundColor:"black",width: '100%',zIndex:"-1", height: '500px'}}>
-                    <img src={Info.page.fondo} style={{width: '100%', height: '500px', opacity:0.8}}/>
+                    <img src={Info.page.fondo} style={{width: '100%', height: '500px', opacity:0.85}}/>
                 </div>
             </div>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
@@ -83,7 +83,7 @@ function LoteInfo(props){
                         return(
                             <a key={index} style={{cursor: "pointer"}} onClick={()=>{ setImagen(element.img), setModalIsOpen(true)}}>
                                 <div className="titulo">
-                                    <label className="text-content-bold text-white">{element.titulo}</label>
+                                    <label className="text-title text-white">{element.titulo}</label>
                                 </div>
                                 <div className="foto">
                                     <img style={{width:"100%",height:"400px"}} src={element.img}></img>
@@ -108,8 +108,8 @@ function LoteInfo(props){
                     Info.beneficios.map((element,index) => {
                         return(
                             <div key={index}>
-                                <div style={{textAlign:"center", marginBottom: "10px"}}>
-                                    <img style={{height:"200px",width:"200px",borderRadius:"50%"}} src={element.img}></img>
+                                <div className="lote-card" style={{textAlign:"center"}}>
+                                    <img style={{height:"200px"}} src={element.img}></img>
                                 </div>
                                 <div style={{textAlign:"center"}}>
                                     <p className="text-content-bold text-red">{element.titulo}</p>
