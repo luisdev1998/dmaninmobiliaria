@@ -7,44 +7,42 @@ function Inicio(props){
 
     return(
         <div>
-          <div id='Home'>
+          <section id='InicioBanner'>
             <Carousel images={Data.InicioPage}/>
-          </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Lotes' className='space-container'>
-            <div className='text-title' style={{textAlign:"center"}}> 
-              <label className="text-black">Nuestros </label>
-              <label className="text-red">Lotes</label>
+          </section>
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+          <section id='InicioProyectos' className='space-container'>
+            <div className='text-principal-bold text-size-1 text-center sombra'>
+              <label className="text-black">NUESTROS </label>
+              <label className="text-red">PROYECTOS</label>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <div className="text-space red"></div>
+            <div className="line-decorate sombra">
+              <div className="red"></div>
             </div>
-            <div className='flex horizontal-adjust horizontal-center'>
-              <a style={{flex: 1}} href={"lotes"}>
-                  <img style={{width:"100%",height:"400px"}} src="../../src/assets/example.jpg"></img>
-              </a>
+            <a style={{flex: 1}} href={"proyectos"}>
+              <img style={{width:"100%",height:"400px"}} src="../../src/assets/example.jpg"></img>
+            </a>
+          </section>
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+          <div id='InicioServicios' className='space-container'>
+            <div className='text-principal-bold text-size-1 text-center sombra'>
+              <label className="text-black">NUESTROS </label>
+              <label className="text-red">SERVICIOS</label>
             </div>
-          </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Servicios' className='space-container'>
-            <div className='text-title' style={{textAlign:"center"}}> 
-              <label className="text-title text-black">Nuestros </label>
-              <label className="text-red">Servicios</label>
+            <div className="line-decorate sombra">
+              <div className="red"></div>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <div className="text-space red"></div>
-            </div>
-            <div className='flex horizontal-adjust horizontal-center horizontal-col-4'>
+            <div className='flex row-direction horizontal-center horizontal-col-4'>
               {
                 Data.servicios.map((element,index) => {
                   return(
                     <div key={index}>
-                      <div style={{textAlign:"center", marginBottom: "10px"}}>
+                      <div className="text-center" style={{marginBottom: "10px"}}>
                         <img style={{height:"200px",width:"200px",borderRadius:"50%"}} src={element.img}></img>
                       </div>
-                      <div style={{textAlign:"center"}}>
-                        <p className="text-content-bold text-red">{element.titulo}</p>
-                        <label className="text-content text-black">{element.descripcion}</label>
+                      <div className="text-center">
+                        <p className="text-secundario-bold text-size-3 text-red">{element.titulo}</p>
+                        <label className="text-secundario-regular text-black">{element.descripcion}</label>
                       </div>
                     </div>
                   )
@@ -52,46 +50,44 @@ function Inicio(props){
               }
             </div>
           </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Testimonios' className='space-container'>
-            <div className='text-title' style={{textAlign:"center"}}>
-              <label className="text-white">Nuestros Testimonios</label>
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+          <div id='InicioTestimonios' className='space-container'>
+            <div className='text-principal-bold text-size-1 text-center sombra'>
+              <label className="text-white">NUESTROS TESTIMONIOS</label>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <div className="text-space white"></div>
+            <div className="line-decorate sombra">
+              <div className="white"></div>
             </div>
             <Carousel images={Data.testimonios}/>
           </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='Contactos' className='space-container'>
-            <div className='text-title' style={{textAlign:"center"}}> 
-              <label className="text-title text-black">Nuestros </label>
-              <label className="text-red">Contactos </label>
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+          <div id='InicioContactos' className='space-container'>
+            <div className='text-principal-bold text-size-1 text-center sombra'>
+              <label className="text-black">NUESTROS </label>
+              <label className="text-red">CONTACTOS </label>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <div className="text-space red"></div>
+            <div className="line-decorate sombra">
+              <div className="red"></div>
             </div>
-            <div className='flex horizontal-adjust horizontal-center horizontal-col-3'>
-              <div className='text-red' style={{textAlign:"center"}}>
-                <FontAwesomeIcon icon={faPhone} style={{fontSize: 55}} beat/>
-                <p className="text-red text-bold">Contáctanos</p>
-                <div className="text-black">Teléfono: +51 999999999</div>
+            <div className='flex row-direction horizontal-center horizontal-col-3'>
+              <div className='text-red text-center'>
+                <FontAwesomeIcon icon={faPhone} className="text-size-1" beat/>
+                <p className="text-red text-secundario-bold text-size-3">CONTÁCTANOS</p>
+                <div className="text-black text-secundario-regular text-size-4">Teléfono: +51 999999999</div>
               </div>
-              <div className='text-red' style={{textAlign:"center"}}>
-                <FontAwesomeIcon icon={faEnvelope} style={{fontSize: 55}} beat/>
-                <p className="text-red text-bold">Escríbemos</p>
-                <div className="text-black">ejemplo@gmail.com</div>
+              <div className='text-red text-center'>
+                <FontAwesomeIcon icon={faEnvelope} className="text-size-1" beat/>
+                <p className="text-red text-secundario-bold text-size-3">ESCRÍBENOS</p>
+                <div className="text-black text-secundario-regular text-size-4">ejemplo@gmail.com</div>
               </div>
-              <div className='text-red' style={{textAlign:"center"}}>
-                <FontAwesomeIcon icon={faMap} style={{fontSize: 55}} beat/>
-                <p className="text-red text-bold">Ubicación</p>
-                <div className="text-black">Avenida ejemplo, chiclayo</div>
+              <div className='text-red text-center'>
+                <FontAwesomeIcon icon={faMap} className="text-size-1" beat/>
+                <p className="text-red text-secundario-bold text-size-3">UBICACIÓN</p>
+                <div className="text-black text-secundario-regular text-size-4">Avenida ejemplo, chiclayo</div>
               </div>
             </div>
           </div>
-          {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          
-
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
         </div>
     )
 }

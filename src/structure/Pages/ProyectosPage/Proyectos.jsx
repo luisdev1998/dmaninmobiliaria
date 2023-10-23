@@ -3,7 +3,7 @@ import { faSearch, faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "../../../components/Carousel";
 
-function Lotes(props){
+function Proyectos(props){
     
     const {Data} = props;
     const [selectedDep, setSelectedDep] = useState(0);
@@ -11,7 +11,7 @@ function Lotes(props){
     const [selectedDistr, setSelectedDistr] = useState(0);
     const [filteredProvs, setFilteredProvs] = useState([]);
     const [filteredDists, setFilteredDists] = useState([]);
-    const [filterLotes, setFilteredLotes] = useState(Data.lotes);
+    const [filterProyectos, setFilteredProyectos] = useState(Data.proyectos);
 
     const handleDepChange = (e) => {
         const depId = parseInt(e.target.value);
@@ -40,44 +40,42 @@ function Lotes(props){
         setSelectedDistr(dists[0]?.id || 0);
         setFilteredDists(dists);
     };
-
     const handleDistrChange = (e) => {
         const distrvId = parseInt(e.target.value);
         setSelectedDistr(distrvId);
-    }
-
-    const buscarLotes = () => {
+    };
+    const buscarProyectos = () => {
         console.log(selectedDep + " - " + selectedProv  + " - " + selectedDistr);
         if(selectedDep === 0){
-            setFilteredLotes(Data.lotes);
+            setFilteredProyectos(Data.Proyectos);
         }else{
-            const filter = Data.lotes.filter(d => 
+            const filter = Data.Proyectos.filter(d => 
                 d.informacion.departamento === selectedDep && 
                 d.informacion.provincia === selectedProv && 
                 d.informacion.distrito === selectedDistr
             );
-            setFilteredLotes(filter);
+            setFilteredProyectos(filter);
         }
-    }
+    };
 
     return(
         <div>
-            <div id='Lotes'>
-                <Carousel images={Data.LotesPage}/>
+            <div id='ProyectosBanner'>
+                <Carousel images={Data.ProyectosPage}/>
             </div>
-            <div id='LotesLista' className='space-container'>
-                <div className='text-title' style={{textAlign:"center"}}> 
-                    <label className="text-black">Encuentra tu </label>
-                    <label className="text-red">Punto ideal</label>
+            <div id='ProyectosLista' className='space-container'>
+                <div className='text-principal-bold text-size-1 text-center sombra'>
+                    <label className="text-black">BUSCA TU </label>
+                    <label className="text-red">PUNTO IDEAL</label>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                    <div className="text-space red"></div>
+                <div className="line-decorate sombra">
+                    <div className="red"></div>
                 </div>
                 
-                <div className="horizontal-select-col-4" style={{textAlign:"center",marginBottom:"30px"}}>
-                    <div style={{textAlign:'start'}}>
-                        <label className="text-content-bold">Departamento</label>
-                        <select value={selectedDep} onChange={handleDepChange} className="text-content" style={{width:"100%"}}>
+                <div className="horizontal-select-col-4" style={{marginBottom:"30px"}}>
+                    <div>
+                        <label className="text-secundario-regular text-size-4">DEPARTAMENTO</label>
+                        <select value={selectedDep} onChange={handleDepChange} className="text-secundario-regular text-size-4 text-red  sombra" style={{width:"100%"}}>
                             {
                                 Data.departamentos.map(dep => (
                                     <option key={dep.id} value={dep.id}>{dep.nombre}</option>
@@ -86,9 +84,9 @@ function Lotes(props){
                         </select>
                     </div>
 
-                    <div style={{textAlign:'start'}}>
-                        <label className="text-content-bold">Provincia</label>
-                        <select value={selectedProv} onChange={handleProvChange} className="text-content" style={{width:"100%"}}>
+                    <div>
+                        <label className="text-secundario-regular text-size-4">PROVINCIA</label>
+                        <select value={selectedProv} onChange={handleProvChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
                             {
                                 filteredProvs.length > 0 ? (
                                     filteredProvs.map(prov => (
@@ -101,9 +99,9 @@ function Lotes(props){
                         </select>
                     </div>
 
-                    <div style={{textAlign:'start'}}>
-                        <label className="text-content-bold">Distrito</label>
-                        <select value={selectedDistr} onChange={handleDistrChange} className="text-content" style={{width:"100%"}}>
+                    <div>
+                        <label className="text-secundario-regular text-size-4">DISTRITO</label>
+                        <select value={selectedDistr} onChange={handleDistrChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
                             {
                                 filteredDists.length > 0 ? (
                                     filteredDists.map(dist => (
@@ -116,41 +114,41 @@ function Lotes(props){
                         </select>
                     </div>
 
-                    <button className="btn red text-white" style={{fontSize: "1.2rem"}} onClick={buscarLotes}>
-                        <FontAwesomeIcon className="text-white" icon={faSearch}/> Buscar
+                    <button className="btn red text-white text-secundario-bold text-size-4 sombra" onClick={buscarProyectos}>
+                        <FontAwesomeIcon icon={faSearch}/> BUSCAR
                     </button>
                 </div>
 
-                <div className='flex horizontal-adjust horizontal-center horizontal-col-4'>
+                <div className='flex row-direction horizontal-center horizontal-col-4'>
                     {
-                        filterLotes.map((element, index) => {
+                        filterProyectos.map((element, index) => {
                             return(
-                                <a key={index} className="lote-card white" style={{display:"flex",flexDirection:"column",gap:"5px"}} onClick={() => window.open("/lotes/"+element.id,"_self")}>
+                                <a key={index} className="card white sombra flex column-direction gap-10" onClick={() => window.open("/Proyectos/"+element.id,"_self")}>
                                     <div className="card-estado dark-red">
-                                        <label className="text-content text-white" style={{fontSize: "0.8rem"}}>{element.informacion.estado}</label>
+                                        <label className="text-secundario-regular text-white text-size-4 sombra">{element.informacion.estado}</label>
                                     </div>
-                                    <img src={element.informacion.img} style={{width:"100%",height:"200px"}}/>
-                                    <div className="text-content text-red" style={{fontSize: "0.8rem"}}>
+                                    <img src={element.informacion.img} width={"100%"} height={200}/>
+                                    <div className="text-secundario-regular text-red text-size-4">
                                         <FontAwesomeIcon icon={faMapMarker}/> {element.informacion.direccion}
                                     </div>
-                                    <div className="text-content-bold text-black">
+                                    <div className="text-secundario-regular text-black text-size-3">
                                         {element.informacion.titulo}
                                     </div>
-                                    <div className="text-black" style={{display:"flex",gap:"5px"}}>
-                                        <label className="text-content" style={{fontSize: "0.8rem"}}>Metrajes: </label>
+                                    <div className="text-secundario-regular text-black flex gap-5 text-size-4">
+                                        <label>Metrajes: </label>
                                         {
                                             element.metrajes.map((metraje, index) => {
                                                 return(
-                                                    <label className="text-content metraje" style={{fontSize: "0.8rem"}} key={index}>{metraje}</label>
+                                                    <label className="metraje text-size-4" key={index}>{metraje}</label>
                                                 )
                                             })
                                         }
                                     </div>
-                                    <div className="space-content"></div>
-                                    <div className="text-content text-gray"  style={{fontSize: "0.8rem",flex:1}}>
+                                    <div className="line-decorate-text gray-light"></div>
+                                    <div className="text-secundario-regular text-gray text-size-5" style={{flex:1}}>
                                         {element.informacion.descripcion}
                                     </div>
-                                    <button className="btn red text-content-bold text-white">
+                                    <button className="btn red text-secundario-bold text-white text-size-4 sombra">
                                         Más Información
                                     </button>
                                 </a>
@@ -163,4 +161,4 @@ function Lotes(props){
     )
 }
 
-export default Lotes;
+export default Proyectos;

@@ -1,22 +1,48 @@
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** VARIABLES *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
   @font-face {
     font-family: 'font-content-bold';
     src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'font-content-light';
+    font-family: 'font-content-regular';
     src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
   }
+  @font-face {
+    font-family: 'font-principal-bold';
+    src: url('../assets/fonts/Akira-Expanded-Super-Bold.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'font-principal-regular';
+    src: url('../assets/fonts/Myriad-Pro-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'font-secundario-bold';
+    src: url('../assets/fonts/Rubik-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'font-secundario-regular';
+    src: url('../assets/fonts/Rubik-Regular.ttf') format('truetype');
+  }
   :root {
+    --font-principal-bold: 'font-principal-bold', sans-serif;
+    --font-principal-regular: 'font-principal-regular', sans-serif;
+    --font-secundario-bold: 'font-secundario-bold', sans-serif;
+    --font-secundario-regular: 'font-secundario-regular', sans-serif;
     --font-content-bold: 'font-content-bold', sans-serif;
     --font-content-light: 'font-content-light', sans-serif;
-
     --primary-color-1: #c70f0f;
-    --primary-color-2: #bb0000;
+    --primary-color-2: #af0000;
     --primary-color-3: #383838;
     --primary-color-4: #f5f5f5;
     --primary-color-5: #adadad;
     --primary-color-6: #ebebeb;
   }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** GENERALES *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   body {
     font-family: var(--font-content-light);
   }
@@ -50,157 +76,52 @@
     font-weight: bold;
     background-color: transparent;
   }
-
-  #Whatsapp{
-    position: fixed;
-    bottom: 0;
-    right: 0
+  input{
+    all: unset;
+    border-radius: 5px;
+    border: solid 1px white;
   }
-  #Home{
-    height: 500px;
+  input::placeholder{
+    color: var(--primary-color-5);
   }
-  #Lotes{
-    background-color: var(--primary-color-4);
-  }
-  #Servicios{
-    background-color: white;
-  }
-  #Testimonios{
-    background-color: var(--primary-color-1);
-  }
-  #contactos{
-    background-color: var(--primary-color-4);
-  }
-  #Redes{
-    background-color: var(--primary-color-2);
-  }
-  #LotesLista{
-    background-color: var(--primary-color-4);
-  }
-  #LoteInfo{
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  #LoteFotos{
-    background-color: var(--primary-color-4);
-  }
-  #LoteFotos .foto{
-    background-color: var(--primary-color-1);
-    width: 100%;
-    height: 400px;
-    z-index: -1;
-  }
-  #LoteFotos a{
-    display: block;
-    position: relative;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
-  }
-  #LoteFotos .titulo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;  /* Ancho completo */
-    height: 100%; /* Altura completa */
-    display: flex;
-    align-items: center;  /* Centra el contenido verticalmente */
-    justify-content: center;  /* Centra el contenido horizontalmente */
-    opacity: 0;  /* Inicia con opacidad 0 para que no se muestre inicialmente */
-    transition: opacity 0.3s;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
-  }
-  #LoteFotos .titulo label {
-    text-align: center;
-    padding: 10px;
-  }
-  #LoteFotos a:hover img{
-    opacity: 0.1;
-    transition:  0.3s;
-  }
-  #LoteFotos a:hover .titulo{
-    opacity: 1;
-  }
-  #LotePromociones{
-    background-color: var(--primary-color-1);
-  }
-  /**********************************/
-  /**********************************/
-  /**********************************/
-  .links li{
-    position: relative;
-    display: block;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  .links li::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 3px;
-    top: 100%;
-    left: 0;
-    transition: transform 0.5s;
-    transform: scaleX(0);
-    transform-origin: right;
-    background-color: white;
-  }
-  .links:hover{
-    color: white;
-  }
-  .links li:hover::after{
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-
-  /**********************************/
-  /**********************************/
-  /**********************************/
-  .text-title-banner{
-    font-family: var(--font-content-bold);
-    font-weight: bold;
-    font-size: 3rem;
-    filter: drop-shadow(0px 5px 4px rgba(0,0,0,0.25));
-  }
-  .text-title{
-    font-family: var(--font-content-bold);
-    font-weight: bold;
-    font-size: 2rem;
-    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
-  }
-  .text-content-bold{
-    font-family: var(--font-content-bold);
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .text-content{
-    font-family: var(--font-content-light);
-    font-size: 1rem;
-  }
-  .text-space{
-    margin-top: 15px;
-    margin-bottom: 30px;
-    width: 200px;
-    height: 3px;
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** DISEÑOS GENERALES *******/
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .sombra{
     filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   }
-  .space-content{
-    height: 3px;
-    background-color: var(--primary-color-6);
-    width: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
+  .text-size-1{
+    font-size: 3rem;
   }
-  .red{
-    background-color: var(--primary-color-1);
+  .text-size-2{
+    font-size: 2rem;
   }
-  .dark-red{
-    background-color: var(--primary-color-2);
+  .text-size-3{
+    font-size: 1.3rem;
   }
-  .white{
-    background-color: white;
+  .text-size-4{
+    font-size: 0.9rem;
   }
-  .black{
-    background-color: var(--primary-color-3);
+  .text-size-5{
+    font-size: 0.7rem;
+  }
+  .text-font-ligth{
+    font-family: var(--font-content-light);
+  }
+  .text-font-bold{
+    font-family: var(--font-content-bold);
+  }
+  .text-principal-regular{
+    font-family: var(--font-principal-regular);
+  }
+  .text-principal-bold{
+    font-family: var(--font-principal-bold);
+  }
+  .text-secundario-regular{
+    font-family: var(--font-secundario-regular);
+  }
+  .text-secundario-bold{
+    font-family: var(--font-secundario-bold);
   }
   .text-red{
     color: var(--primary-color-1);
@@ -214,11 +135,209 @@
   .text-gray{
     color: var(--primary-color-5)
   }
+  .red{
+    background-color: var(--primary-color-1);
+  }
+  .dark-red{
+    background-color: var(--primary-color-2);
+  }
+  .white{
+    background-color: white;
+  }
+  .black{
+    background-color: var(--primary-color-3);
+  }
+  .gray{
+    background-color: var(--primary-color-5)
+  }
+  .gray-light{
+    background-color: var(--primary-color-6)
+  }
+  .line-decorate{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .line-decorate div{
+    margin-top: 15px;
+    margin-bottom: 5%;
+    width: 500px;
+    height: 5px;
+  }
   .btn{
     padding: 10px;
     border-radius: 10px;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   }
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** NAVBAR *******/
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .navbar{
+    font-weight: bold;
+  }
+  .navbar-container ul li{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .navbar-container ul li .hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: white;
+  }
+  .navbar-container ul li .hover:hover{
+    color: white;
+  }
+  .navbar-container ul li .hover:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .navbar-button{
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: 0.5s;
+  }
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** SECTIONS *******/
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  #InicioBanner{
+    height: 450px;
+  }
+  #InicioProyectos{
+    background-color: var(--primary-color-4);
+  }
+  #ServicioInicioServiciosos{
+    background-color: white;
+  }
+  #InicioTestimonios{
+    background-color: var(--primary-color-1);
+  }
+  #InicioContactos{
+    background-color: var(--primary-color-4);
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #FooterRedes{
+    background-color: var(--primary-color-2);
+  }
+  #FooterCreditos{
+    background-color: var(--primary-color-3);
+    padding: 20px;
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #Whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  #Whatsapp img{
+    width: 150px;
+    height: 150px;
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #ProyectosLista{
+    background-color: var(--primary-color-4);
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #ProyectosInfoBanner{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #ProyectosInfoFotos{
+    background-color: var(--primary-color-4);
+  }
+  #ProyectosInfoFotos .foto{
+    background-color: var(--primary-color-1);
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+  }
+  #ProyectosInfoFotos a{
+    display: block;
+    position: relative;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+  }
+  #ProyectosInfoFotos .titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+  }
+  #ProyectosInfoFotos .titulo label {
+    text-align: center;
+    padding: 10px;
+  }
+  #ProyectosInfoFotos a:hover img{
+    opacity: 0.1;
+    transition:  0.3s;
+  }
+  #ProyectosInfoFotos a:hover .titulo{
+    opacity: 1;
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+
+  #ProyectosPromociones{
+    background-color: var(--primary-color-1);
+  }
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** PROYECTOS *******/
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .card{
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .card img{
+    border-radius: 10px;
+  }
+  .card-estado{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .metraje{
+    padding: 1px 8px 1px 8px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .line-decorate-text{
+    height: 3px;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+
+
+  
+
+
+
+  /**********************************/
+  /**********************************/
+  /**********************************/
+
 
   
   /**********************************/
@@ -250,56 +369,6 @@
   /**********************************/
   /**********************************/
   /**********************************/
-  /* NAVBAR */
-  .navbar{
-    background-color: var(--primary-color-2);
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .footer{
-    background-color: var(--primary-color-3);
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .navbar li a{
-    cursor: pointer;
-  }
-  /**********************************/
-  /**********************************/
-  /**********************************/
-  /* lotes */
-  
-  .lote-card{
-    border-radius: 10px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    padding: 15px;
-  }
-  .lote-card img{
-    border-radius: 10px;
-  }
-  .card-estado{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
-    border-radius: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  .metraje{
-    padding: 1px 8px 1px 8px;
-    background-color: #d1d1d1;
-    border-radius: 10px;
-    white-space: nowrap;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  }
-  /**********************************/
-  /**********************************/
-  /**********************************/
-
 
   @media screen and (max-width: 1100px) {
     .text-title-banner{
@@ -309,6 +378,12 @@
   @media screen and (max-width: 900px) {
   }
   @media screen and (max-width: 650px) {
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** NAVBAR *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  
+
+
     #Whatsapp img{
       width: 100px;
       height: 100px;
@@ -320,7 +395,7 @@
     .text-title{
       font-size: 1.2rem;
     }
-    .text-space{
+    .line-decorate{
       margin-top: 8px;
       margin-bottom: 30px;
       width: 150px;

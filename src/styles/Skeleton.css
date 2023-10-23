@@ -1,67 +1,108 @@
- /********/
-
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** GENERALES *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
-
-  .logo-header-grande{
-    display: block;
-    width: 150px;
-  }
-  .logo-header-corto{
-    display: none;
-    width: 30px;
-  }
-  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-  /* NAVBAR */
-  .container {
-    box-sizing: border-box; /* Considera el margen en el ancho total del contenedor */
-    width: calc(100%); /* Considera los márgenes en el ancho total del contenedor */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** NAVBAR *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .navbar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
     display: flex;
-    flex-direction: column; 
+    align-items: center;
+    z-index: 1000;
+  }
+  .navbar-container{
+    display: flex;
     flex-wrap: wrap;
-    gap: 50px; /* Ajusta este valor según lo que necesites */
-    padding-bottom: 5%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
   }
-  
-  .container ul{
-    display: flex;
-    gap: 1.5rem;
+  .navbar-links ul{
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
   }
-  .container ul li{
-    display: inline-block;
+  .navbar-links li{
+    cursor: pointer;
   }
-  #btn{
+  .navbar-button-menu {
+    display: none;
+    cursor: pointer;
+  }
+  #navbar-button{
     display: none;
   }
-  .navbar-menu{
-    display: none;
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** CONTENEDORES *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .main-body{
+    margin-top: 100px;
   }
-
-  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   .space-container{
     padding-right: 5%;
     padding-left: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
-  .space-header-footer{
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** ESQUEMAS *******/
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .padding-5px{
+    padding: 5px !important;
+  }
+  .padding-10px{
+    padding: 10px !important;
+  }
+  .padding-1em{
+    padding: 1em !important;
+  }
+  .padding-2em{
+    padding: 2em !important;
+  }
+  .padding-3em{
+    padding: 3em !important;
   }
   .flex{
     display: flex;
   }
-  .horizontal-adjust{
+  .gap-5{
+    gap: 5px !important;
+  }
+  .gap-10{
+    gap: 10px !important;
+  }
+  .gap-1em{
+    gap: 1em !important;
+  }
+  .gap-2em{
+    gap: 2em !important;
+  }
+  .gap-3em{
+    gap: 3em !important;
+  }
+  .row-direction{
     flex-direction: row;
+  }
+  .column-direction{
+    flex-direction: column;
   }
   .horizontal-center{
     justify-content: center;
+  }
+  .vertical-center{
+    align-items: center;
+  }
+  .text-center{
+    text-align: center;
   }
   .horizontal-col-4{
     position: relative;
@@ -86,11 +127,9 @@
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 10px;
   }
+
   /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/* BODY */
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
   @media screen and (max-width: 1100px) {
     .horizontal-col-4{
@@ -108,48 +147,46 @@
   }
 
   @media screen and (max-width: 650px) {
-    .logo-header-corto{
-      display: block;
-    }
-    .logo-header-grande{
-      display: none;
-    }
-    .space-header-footer {
-      padding-right: 5%;
-      padding-left: 5%;
-    }
-    .navbar-menu {
-      display: block;
-      width: 2rem;
-      cursor: pointer;
-    }
-    input[type="checkbox"][id="btn"]:checked ~ .links { 
-      max-height: 500px; 
-      transition: max-height .5s ease-out;
-    }
-    .links{
-      max-height: 0; 
-      overflow: hidden; 
-      transition: max-height .5s ease-out;
-    }
-    .links ul{ 
-      margin-top: 1rem; 
-      display: flex; 
-      flex-direction: column; 
-      gap: 1.5rem; 
-      list-style: disc 
-    }
-    .links ul li{ 
-      display: block; 
-      transition: 0.2s 
-    }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** NAVBAR *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .navbar{
+    height: 70px;
+  }
+  .navbar-container{
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
+  }
+  .navbar-links{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .navbar-links ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar-links label{
+    display: none;
+  }
+  .navbar-button-menu{
+    display: block;
+  }
+  #navbar-button:checked ~ .navbar-links{
+    max-height: 250px;
+  }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/****** CONTENEDORES *******/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .main-body{
+    margin-top: 70px;
+  }
 
-    .links {
-      width: 100%;
-    }
-    .navbar .container{
-      gap: 0px !important;
-    }
+
 
     .horizontal-col-4{
       grid-template-columns: repeat(1, 1fr);

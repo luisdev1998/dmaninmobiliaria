@@ -41,7 +41,7 @@ function Proyecto(props){
                     </label>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                    <div className="text-space red"></div>
+                    <div className="line-decorate red"></div>
                 </div>
                 <div className='card'>
                     <div className='card-item'>
@@ -104,7 +104,7 @@ function Proyecto(props){
                     </label>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                    <div className="text-space red"></div>
+                    <div className="line-decorate red"></div>
                 </div>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe" 
@@ -128,10 +128,10 @@ function AreasComunes(proyecto){
                     <label className='text-title text-red'>Áreas comunes</label>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                    <div className="text-space red"></div>
+                    <div className="line-decorate red"></div>
                 </div>
 
-                <div className='flex horizontal-adjust horizontal-center horizontal-col-4'>
+                <div className='flex row-direction horizontal-center horizontal-col-4'>
                     {
                         proyecto.areascomunes.map((element,index) => {
                             return(
@@ -155,7 +155,7 @@ function Departamentos(proyecto, setModalIsOpen, setImages){
                     <label className='text-title text-red'>Departamentos</label>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
-                    <div className="text-space red"></div>
+                    <div className="line-decorate red"></div>
                 </div>
 
                 <table>
@@ -175,7 +175,7 @@ function Departamentos(proyecto, setModalIsOpen, setImages){
                             return(
                                 <tr key={index}>
                                     <td>
-                                        <button className='btn black text-white'
+                                        <button className='btn black text-white sombra'
                                         onClick={()=>{ setImages(element.galeria), setModalIsOpen(true)}}>
                                             VER
                                         </button>
@@ -184,7 +184,7 @@ function Departamentos(proyecto, setModalIsOpen, setImages){
                                     <td>{element.dormitorios} - {element.baños}</td>
                                     <td>{element.area}</td>
                                     <td>{element.precio}</td>
-                                    <td><button className='btn red'><label className='text-white'>COTIZAR</label></button></td>
+                                    <td><button className='btn red sombra'><label className='text-white'>COTIZAR</label></button></td>
                                 </tr>
                             )
                         })

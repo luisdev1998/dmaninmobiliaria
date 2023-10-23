@@ -82,7 +82,7 @@ function Constructora(){
                                 <div><h1>Ubicación de Local Principal</h1></div>
                                 <div><h1>Contáctanos por este medio</h1></div>
                                 <div className='w-100 text-center'>
-                                    <button className='btn-whatsapp sombra' onClick={() => window.open('https://www.google.com', '_blank')}>
+                                    <button className='ProyectosInfoFotos-whatsapp sombra' onClick={() => window.open('https://www.google.com', '_blank')}>
                                         Contáctanos
                                     </button>
                                 </div>

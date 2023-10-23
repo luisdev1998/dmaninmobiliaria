@@ -2,7 +2,9 @@ import React from 'react';
 import Slider from "react-slick";
 
 function Carousel(props) {
+    const {images} = props;
     const settings = {
+        className: "center",
         dots: true,
         infinite: true,
         speed: 500,
@@ -23,17 +25,17 @@ function Carousel(props) {
 
     return (
         <Slider {...settings}>
-            {props.images.map((image, index) => (
+            {images.map((image, index) => (
                 <div key={index}>
                     {
                     image.titulo !== '' ? 
-                    <div className='text-title' style={{textAlign:'center'}}>
+                    <div className='text-title text-center'>
                         {image.titulo}
                     </div> 
                     :
                     <div></div>
                     }
-                    <img src={image.img} alt={`carousel-img-${index}`} style={{width: '100%', height: '500px'}}/>
+                    <img src={image.img} alt={`carousel-img-${index}`} style={{width: '100%', height: '450px'}}/>
                 </div>
             ))}
         </Slider>
