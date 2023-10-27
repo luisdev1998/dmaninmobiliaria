@@ -1,11 +1,6 @@
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /****** VARIABLES *******/
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-
-  @font-face {
-    font-family: 'font-content-bold';
-    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
-  }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   @font-face {
     font-family: 'font-content-regular';
     src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
@@ -31,21 +26,19 @@
     --font-principal-regular: 'font-principal-regular', sans-serif;
     --font-secundario-bold: 'font-secundario-bold', sans-serif;
     --font-secundario-regular: 'font-secundario-regular', sans-serif;
-    --font-content-bold: 'font-content-bold', sans-serif;
-    --font-content-light: 'font-content-light', sans-serif;
-    --primary-color-1: #e21111;
-    --primary-color-2: #af0000;
-    --primary-color-7: #8a0000;
-    --primary-color-3: #383838;
-    --primary-color-4: #f5f5f5;
-    --primary-color-5: #adadad;
-    --primary-color-6: #ebebeb;
+    --primary-red-1: #e21111;
+    --primary-red-2: #af0000;
+    --primary-red-3: #8a0000;
+    --primary-white-1: #f5f5f5;
+    --primary-white-2: #ebebeb;
+    --primary-gray-1: #adadad;
+    --primary-black-1: #383838;
   }
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /****** GENERALES *******/
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   body {
-    font-family: var(--font-content-light);
+    font-family: var(--font-principal-regular);
   }
   a{
    text-decoration: none;
@@ -62,7 +55,7 @@
     background-color: white;
   }
   thead{
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-red-2);
   } 
   td, th {
     border: 1px solid #dddddd;
@@ -72,8 +65,8 @@
   select{
     padding: 5px;
     border-radius: 5px;
-    border: solid 1px var(--primary-color-2);
-    color: var(--primary-color-2);
+    border: solid 1px var(--primary-red-2);
+    color: var(--primary-red-2);
     font-weight: bold;
     background-color: transparent;
   }
@@ -83,14 +76,14 @@
     border: solid 1px white;
   }
   input::placeholder{
-    color: var(--primary-color-5);
+    color: var(--primary-gray-1);
   }
   div:focus{
     outline: none;
   }
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /****** DISEÑOS GENERALES *******/
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   .sombra{
     filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.30));
   }
@@ -109,12 +102,6 @@
   .text-size-5{
     font-size: 0.8rem;
   }
-  .text-font-ligth{
-    font-family: var(--font-content-light);
-  }
-  .text-font-bold{
-    font-family: var(--font-content-bold);
-  }
   .text-principal-regular{
     font-family: var(--font-principal-regular);
   }
@@ -128,34 +115,34 @@
     font-family: var(--font-secundario-bold);
   }
   .text-red{
-    color: var(--primary-color-1);
+    color: var(--primary-red-1);
   }
   .text-white{
     color: white;
   }
   .text-black{
-    color: var(--primary-color-3);
+    color: var(--primary-black-1);
   }
   .text-gray{
-    color: var(--primary-color-5)
+    color: var(--primary-gray-1)
   }
   .red{
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-red-1);
   }
   .dark-red{
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-red-2);
   }
   .white{
     background-color: white;
   }
   .black{
-    background-color: var(--primary-color-3);
+    background-color: var(--primary-black-1);
   }
   .gray{
-    background-color: var(--primary-color-5)
+    background-color: var(--primary-gray-1)
   }
   .gray-light{
-    background-color: var(--primary-color-6)
+    background-color: var(--primary-white-2)
   }
   .line-decorate{
     display: flex;
@@ -172,9 +159,53 @@
     padding: 10px;
     border-radius: 10px;
   }
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .card{
+    border-radius: 10px;
+  }
+  .card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .metraje{
+    padding: 1px 8px 1px 8px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .line-decorate-text{
+    height: 3px;
+    width: 100%;
+  }
+  .carousel-dots{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-red-3);
+  }
+  .carousel-img{
+    height: 550px;
+  }
+  .slick-dots li.slick-active div {
+    background: var(--primary-red-1);
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-30px);
+    }
+    20% {
+      transform: translateY(0);
+    }
+  } 
+  .bounce {
+    animation: bounce 5s infinite; /* 5s es la duración total de una iteración */
+  }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /****** NAVBAR *******/
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   .navbar{
     font-weight: bold;
   }
@@ -209,19 +240,30 @@
     padding: 0.5em 1em 0.5em 1em;
     transition: 0.5s;
   }
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+  .navbar-logo-grande{
+    width: 100%;
+    max-height: 80px;
+  }
+  .navbar-logo-chico{
+    display: none;
+    width: 100%;
+    height: 60px;
+  }
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 /****** SECTIONS *******/
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioBanner{
     height: 550px;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioProyectos{
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-white-1);
   }
   #InicioProyectos img{
     height: 450px;
     width: 100%;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioEquipo{
     background-color: white;
   }
@@ -230,28 +272,35 @@
     width: 100%;
     border-radius: 20px;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioTestimonios{
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-red-1);
   }
   #InicioTestimonios .carousel{
     width:100%;
     overflow: hidden;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioContactos{
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-white-1);
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioContactos .fa-solid{
     font-size: 4em !important;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   #FooterRedes{
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-red-2);
   }
   #FooterCreditos{
-    background-color: var(--primary-color-3);
+    background-color: var(--primary-black-1);
     padding: 20px;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   #Whatsapp{
     position: fixed;
     bottom: 0;
@@ -261,29 +310,32 @@
     width: 150px;
     height: 150px;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosLista{
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-white-1);
   }
   #ProyectosLista img{
     width: 100%;
     height: 300px;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosInfoBanner{
     position: relative;
     background-size: cover;
     background-position: center;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosInfoDescuento img{
     width: 100%;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosInfoFotos{
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-white-1);
   }
   #ProyectosInfoFotos .foto{
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-red-1);
     width: 100%;
     height: 350px;
     z-index: -1;
@@ -320,81 +372,28 @@
   #ProyectosInfoFotos a:hover .titulo{
     opacity: 1;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosPromociones{
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-red-1);
   }
   #ProyectosPromociones .carousel{
     width:100%;
     overflow: hidden;
   }
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosBeneficios .fa-solid{
     font-size: 5em !important;
   }
-  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #ProyectosUbicacion img,
   #ProyectosUbicacion iframe{
     height: 700px;
     width: 100%;
     border: none;
   }
-
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/****** PROYECTOS *******/
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-  .card{
-    border-radius: 10px;
-  }
-  .card img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  .metraje{
-    padding: 1px 8px 1px 8px;
-    background-color: #d1d1d1;
-    border-radius: 10px;
-    white-space: nowrap;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  }
-  .line-decorate-text{
-    height: 3px;
-    width: 100%;
-  }
-
-  /**********************************/
-  /**********************************/
-  /**********************************/
-
-  .carousel-dots{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: var(--primary-color-7);
-  }
-  .carousel-img{
-    height: 550px;
-  }
-  .slick-dots li.slick-active div {
-    background: var(--primary-color-1);
-  }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    10% {
-      transform: translateY(-30px);
-    }
-    20% {
-      transform: translateY(0);
-    }
-  } 
-  .bounce {
-    animation: bounce 5s infinite; /* 5s es la duración total de una iteración */
-  }
-  /**********************************/
-  /**********************************/
-  /**********************************/
-
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   @media screen and (max-width: 1100px) {
     .text-size-1{
       font-size: 2.5rem;
@@ -421,40 +420,59 @@
       height: 450px;
     }
   }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   @media screen and (max-width: 900px) {
+    .navbar-logo-grande{
+      height: 60px;
+    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #InicioBanner{
       height: 400px;
     }
-    .carousel-img{
-      height: 400px;
-    }
-    .text-size-4{
-      font-size: 0.8rem;
-    }
-    #ProyectosUbicacion img,
-    #ProyectosUbicacion iframe{
-      height: 500px;
-    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #ProyectosInfoFotos .foto{
       height: 300px;
     }
     #ProyectosInfoFotos img{
       height: 300px;
     }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    #ProyectosUbicacion img,
+    #ProyectosUbicacion iframe{
+      height: 500px;
+    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    .carousel-img{
+      height: 400px;
+    }
+    .text-size-4{
+      font-size: 0.8rem;
+    }
   }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   @media screen and (max-width: 650px) {
+    .navbar-logo-grande{
+      display: none;
+    }
+    .navbar-logo-chico{
+      display: block;
+    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #Whatsapp img{
       width: 100px;
       height: 100px;
     }
-    .carousel-dots{
-      width: 10px;
-      height: 10px;
-    }
-    .carousel-img{
-      height: 300px;
-    }
-
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #InicioBanner{
       height: 300px;
     }
@@ -467,13 +485,7 @@
     #InicioTestimonios label{
       text-align: justify;
     }
-    #ProyectosInfoBanner .text-size-2{
-      font-size: 2em;
-      text-align: center;
-    }
-    #ProyectosInfoBanner iframe{
-      height: 300px;
-    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #ProyectosBeneficios .horizontal-col-3{
       grid-template-columns: repeat(2, 1fr);
     }
@@ -481,13 +493,30 @@
     #ProyectosUbicacion iframe{
       height: 400px;
     }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    #ProyectosInfoBanner iframe{
+      height: 300px;
+    }
+    #ProyectosInfoBanner .text-size-2{
+      font-size: 2em;
+      text-align: center;
+    }
     #ProyectosInfoFotos .foto{
       height: 250px;
     }
     #ProyectosInfoFotos img{
       height: 250px;
     }
-
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    .carousel-dots{
+      width: 10px;
+      height: 10px;
+    }
+    .carousel-img{
+      height: 300px;
+    }
     .text-size-1{
       font-size: 1.5rem;
     }

@@ -48,7 +48,7 @@ function Inicio(props){
               </div>
               <br/>
               <br/>
-              <img className="sombra" src={Data.InicioEquipo.img} style={{}}/>
+              <img className="sombra" src={Data.InicioEquipo.img}/>
             </div>
           </div>
 {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}

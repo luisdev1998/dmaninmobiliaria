@@ -424,39 +424,6 @@ const ProyectosLista = [
     },
 ]
 
-const servicios = [
-    {
-        id: 1,
-        titulo: 'Construcción',
-        descripcion: 'ejemplo ejemplo ejemplo ejemplo ejemplo',
-        img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-    },
-    {
-        id: 2,
-        titulo: 'Planos',
-        descripcion: 'ejemplo ejemplo ejemplo ejemplo ejemplo',
-        img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-    },
-    {
-        id: 3,
-        titulo: 'Asesoramiento',
-        descripcion: 'ejemplo ejemplo ejemplo ejemplo ejemplo',
-        img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-    },
-    {
-        id: 4,
-        titulo: 'Diseño de interiores',
-        descripcion: 'ejemplo ejemplo ejemplo ejemplo ejemplo',
-        img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-    },
-    {
-        id: 5,
-        titulo: 'Ejemplo',
-        descripcion: 'ejemplo ejemplo ejemplo ejemplo ejemplo',
-        img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg',
-    }
-]
-
 const Data = {
     InicioBanner,
     InicioProyectos,
@@ -467,8 +434,7 @@ const Data = {
     departamentos,
     provincias,
     distritos,
-    ProyectosLista,
-    servicios
+    ProyectosLista
 }
 
 export default Data
