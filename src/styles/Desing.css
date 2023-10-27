@@ -2,24 +2,20 @@
 /****** VARIABLES *******/
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   @font-face {
-    font-family: 'font-content-regular';
-    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
-  }
-  @font-face {
     font-family: 'font-principal-bold';
-    src: url('../assets/fonts/Akira-Expanded-Super-Bold.otf') format('truetype');
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'font-principal-regular';
-    src: url('../assets/fonts/Myriad-Pro-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
   }
   @font-face {
     font-family: 'font-secundario-bold';
-    src: url('../assets/fonts/Rubik-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'font-secundario-regular';
-    src: url('../assets/fonts/Rubik-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
   }
   :root {
     --font-principal-bold: 'font-principal-bold', sans-serif;
@@ -88,16 +84,16 @@
     filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.30));
   }
   .text-size-1{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .text-size-2{
     font-size: 2rem;
   }
   .text-size-3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .text-size-4{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .text-size-5{
     font-size: 0.8rem;
@@ -151,7 +147,7 @@
   }
   .line-decorate div{
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 500px;
     height: 5px;
   }
@@ -268,7 +264,7 @@
     background-color: white;
   }
   #InicioEquipo img{
-    height: 500px;
+    height: 580px;
     width: 100%;
     border-radius: 20px;
   }
@@ -403,7 +399,7 @@
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   @media screen and (max-width: 1100px) {
     .text-size-1{
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
     .text-size-2{
       font-size: 1.5rem;
@@ -491,7 +487,7 @@
       height: 300px;
     }
     #InicioEquipo img{
-      height: 350px;
+      height: 320px;
     }
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #InicioTestimonios label{
@@ -541,7 +537,7 @@
     }
     .line-decorate div{
       width: 200px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
