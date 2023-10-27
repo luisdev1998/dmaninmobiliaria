@@ -10,7 +10,7 @@ function Footer(){
             <div className="line-decorate sombra">
               <div className="white"></div>
             </div>
-            <div className='text-white flex horizontal-center gap-2em'>
+            <div className='text-white flex horizontal-center gap-3em'>
                 <a target="_blank" href="#">
                   <i className="fa-brands fa-facebook text-size-1 sombra"/>
                 </a>

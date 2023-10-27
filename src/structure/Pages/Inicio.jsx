@@ -86,17 +86,17 @@ function Inicio(props){
                 <div className='text-red text-center'>
                   <i className="fa-solid fa-phone text-size-1 sombra fa-beat"/>
                   <p className="text-red text-secundario-bold text-size-3 sombra">CONTÁCTANOS</p>
-                  <div className="text-black text-secundario-regular text-size-4">Teléfono: {Data.InicioContactos.telefono}</div>
+                  <div className="text-black text-secundario-regular text-size-3">Teléfono: {Data.InicioContactos.telefono}</div>
                 </div>
                 <div className='text-red text-center'>
                   <i className="fa-solid fa-envelope text-size-1 sombra fa-beat"/>
                   <p className="text-red text-secundario-bold text-size-3 sombra">ESCRÍBENOS</p>
-                  <div className="text-black text-secundario-regular text-size-4">{Data.InicioContactos.correo}</div>
+                  <div className="text-black text-secundario-regular text-size-3">{Data.InicioContactos.correo}</div>
                 </div>
                 <div className='text-red text-center'>
                   <i className="fa-solid fa-map text-size-1 sombra fa-beat"/>
                   <p className="text-red text-secundario-bold text-size-3 sombra">UBICACIÓN</p>
-                  <div className="text-black text-secundario-regular text-size-4">{Data.InicioContactos.direccion}</div>
+                  <div className="text-black text-secundario-regular text-size-3">{Data.InicioContactos.direccion}</div>
                 </div>
               </div>
             </div>

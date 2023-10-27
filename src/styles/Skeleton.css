@@ -201,6 +201,10 @@
   .main-body{
     margin-top: 70px;
   }
+  .space-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .horizontal-col-4{
     grid-template-columns: repeat(1, 1fr);
   }

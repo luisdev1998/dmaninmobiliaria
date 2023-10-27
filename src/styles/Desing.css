@@ -151,7 +151,7 @@
   }
   .line-decorate div{
     margin-top: 15px;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
     width: 500px;
     height: 5px;
   }
@@ -279,6 +279,10 @@
   #InicioTestimonios .carousel{
     width:100%;
     overflow: hidden;
+    min-height: 400px;
+  }
+  #InicioTestimonios img{
+    min-height: 400px;
   }
   /*||||||||||||||||||||||||||||||||||||||||||||||*/
   #InicioContactos{
@@ -293,6 +297,9 @@
   /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
   #FooterRedes{
     background-color: var(--primary-red-2);
+  }
+  #FooterRedes .fa-brands{
+    font-size: 6em;
   }
   #FooterCreditos{
     background-color: var(--primary-black-1);
@@ -446,6 +453,10 @@
       height: 500px;
     }
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    #FooterRedes .fa-brands{
+      font-size: 5em;
+    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
     .carousel-img{
@@ -480,8 +491,9 @@
       height: 300px;
     }
     #InicioEquipo img{
-      height: 300px;
+      height: 350px;
     }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     #InicioTestimonios label{
       text-align: justify;
     }
@@ -508,6 +520,10 @@
       height: 250px;
     }
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
+    #FooterRedes .fa-brands{
+      font-size: 4em;
+    }
+    /*||||||||||||||||||||||||||||||||||||||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||||||||*/
     .carousel-dots{
@@ -525,6 +541,7 @@
     }
     .line-decorate div{
       width: 200px;
+      margin-bottom: 40px;
     }
   }
 
