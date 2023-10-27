@@ -33,8 +33,9 @@
     --font-secundario-regular: 'font-secundario-regular', sans-serif;
     --font-content-bold: 'font-content-bold', sans-serif;
     --font-content-light: 'font-content-light', sans-serif;
-    --primary-color-1: #c70f0f;
+    --primary-color-1: #e21111;
     --primary-color-2: #af0000;
+    --primary-color-7: #8a0000;
     --primary-color-3: #383838;
     --primary-color-4: #f5f5f5;
     --primary-color-5: #adadad;
@@ -84,11 +85,14 @@
   input::placeholder{
     color: var(--primary-color-5);
   }
+  div:focus{
+    outline: none;
+  }
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /****** DISEÑOS GENERALES *******/
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   .sombra{
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.30));
   }
   .text-size-1{
     font-size: 3rem;
@@ -103,7 +107,7 @@
     font-size: 0.9rem;
   }
   .text-size-5{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .text-font-ligth{
     font-family: var(--font-content-light);
@@ -209,19 +213,35 @@
 /****** SECTIONS *******/
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   #InicioBanner{
-    height: 450px;
+    height: 550px;
   }
   #InicioProyectos{
     background-color: var(--primary-color-4);
   }
-  #ServicioInicioServiciosos{
+  #InicioProyectos img{
+    height: 450px;
+    width: 100%;
+  }
+  #InicioEquipo{
     background-color: white;
+  }
+  #InicioEquipo img{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
   }
   #InicioTestimonios{
     background-color: var(--primary-color-1);
   }
+  #InicioTestimonios .carousel{
+    width:100%;
+    overflow: hidden;
+  }
   #InicioContactos{
     background-color: var(--primary-color-4);
+  }
+  #InicioContactos .fa-solid{
+    font-size: 4em !important;
   }
   /* |||||||||||||||||||||||||||||||||||||||||||||| */
   #FooterRedes{
@@ -245,11 +265,18 @@
   #ProyectosLista{
     background-color: var(--primary-color-4);
   }
+  #ProyectosLista img{
+    width: 100%;
+    height: 300px;
+  }
   /* |||||||||||||||||||||||||||||||||||||||||||||| */
   #ProyectosInfoBanner{
     position: relative;
-    display: flex;
-    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  #ProyectosInfoDescuento img{
+    width: 100%;
   }
   /* |||||||||||||||||||||||||||||||||||||||||||||| */
   #ProyectosInfoFotos{
@@ -258,8 +285,11 @@
   #ProyectosInfoFotos .foto{
     background-color: var(--primary-color-1);
     width: 100%;
-    height: 400px;
+    height: 350px;
     z-index: -1;
+  }
+  #ProyectosInfoFotos img{
+    height: 350px;
   }
   #ProyectosInfoFotos a{
     display: block;
@@ -291,9 +321,22 @@
     opacity: 1;
   }
   /* |||||||||||||||||||||||||||||||||||||||||||||| */
-
   #ProyectosPromociones{
     background-color: var(--primary-color-1);
+  }
+  #ProyectosPromociones .carousel{
+    width:100%;
+    overflow: hidden;
+  }
+  #ProyectosBeneficios .fa-solid{
+    font-size: 5em !important;
+  }
+  /* |||||||||||||||||||||||||||||||||||||||||||||| */
+  #ProyectosUbicacion img,
+  #ProyectosUbicacion iframe{
+    height: 700px;
+    width: 100%;
+    border: none;
   }
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
@@ -301,18 +344,10 @@
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
   .card{
     border-radius: 10px;
-    padding: 15px;
   }
   .card img{
-    border-radius: 10px;
-  }
-  .card-estado{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
-    border-radius: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .metraje{
     padding: 1px 8px 1px 8px;
@@ -324,30 +359,20 @@
   .line-decorate-text{
     height: 3px;
     width: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
   }
 
-
-
-  
-
-
-
   /**********************************/
   /**********************************/
   /**********************************/
 
-
-  
-  /**********************************/
-  /**********************************/
-  /**********************************/
-  .carousel{
+  .carousel-dots{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-color-7);
+  }
+  .carousel-img{
+    height: 550px;
   }
   .slick-dots li.slick-active div {
     background: var(--primary-color-1);
@@ -371,36 +396,106 @@
   /**********************************/
 
   @media screen and (max-width: 1100px) {
-    .text-title-banner{
-      font-size: 2rem;
+    .text-size-1{
+      font-size: 2.5rem;
+    }
+    .text-size-2{
+      font-size: 1.5rem;
+    }
+    .text-size-3{
+      font-size: 1rem;
+    }
+    .text-size-4{
+      font-size: 0.9rem;
+    }
+    .text-size-5{
+      font-size: 0.8rem;
+    }
+    .line-decorate div{
+      width: 300px;
+    }
+    #InicioBanner{
+      height: 450px;
+    }
+    .carousel-img{
+      height: 450px;
     }
   }
   @media screen and (max-width: 900px) {
+    #InicioBanner{
+      height: 400px;
+    }
+    .carousel-img{
+      height: 400px;
+    }
+    .text-size-4{
+      font-size: 0.8rem;
+    }
+    #ProyectosUbicacion img,
+    #ProyectosUbicacion iframe{
+      height: 500px;
+    }
+    #ProyectosInfoFotos .foto{
+      height: 300px;
+    }
+    #ProyectosInfoFotos img{
+      height: 300px;
+    }
   }
   @media screen and (max-width: 650px) {
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/****** NAVBAR *******/
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-  
-
-
     #Whatsapp img{
       width: 100px;
       height: 100px;
     }
-    .text-title-banner{
-      text-align: center;
-      font-size: 1.5rem;
-    }  
-    .text-title{
-      font-size: 1.2rem;
+    .carousel-dots{
+      width: 10px;
+      height: 10px;
     }
-    .line-decorate{
-      margin-top: 8px;
-      margin-bottom: 30px;
-      width: 150px;
-      height: 2px;
-      filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    .carousel-img{
+      height: 300px;
+    }
+
+    #InicioBanner{
+      height: 300px;
+    }
+    #InicioProyectos img{
+      height: 300px;
+    }
+    #InicioEquipo img{
+      height: 300px;
+    }
+    #InicioTestimonios label{
+      text-align: justify;
+    }
+    #ProyectosInfoBanner .text-size-2{
+      font-size: 2em;
+      text-align: center;
+    }
+    #ProyectosInfoBanner iframe{
+      height: 300px;
+    }
+    #ProyectosBeneficios .horizontal-col-3{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #ProyectosUbicacion img,
+    #ProyectosUbicacion iframe{
+      height: 400px;
+    }
+    #ProyectosInfoFotos .foto{
+      height: 250px;
+    }
+    #ProyectosInfoFotos img{
+      height: 250px;
+    }
+
+    .text-size-1{
+      font-size: 1.5rem;
+    }
+    .text-size-2{
+      font-size: 1rem;
+    }
+    .line-decorate div{
+      width: 200px;
     }
   }
 

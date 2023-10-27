@@ -14,11 +14,11 @@ function Carousel(props) {
         autoplaySpeed: 5000,
         arrows: false,
         customPaging: i => (
-            <div className='carousel'></div>
+            <div className='carousel-dots'></div>
         ),
         appendDots: dots => (
           <div>
-            <ul style={{marginTop: "-70px"}}> {dots} </ul>
+            <ul style={{marginTop: "-50px"}}> {dots} </ul>
           </div>
         )
     };
@@ -27,15 +27,7 @@ function Carousel(props) {
         <Slider {...settings}>
             {images.map((image, index) => (
                 <div key={index}>
-                    {
-                    image.titulo !== '' ? 
-                    <div className='text-title text-center'>
-                        {image.titulo}
-                    </div> 
-                    :
-                    <div></div>
-                    }
-                    <img src={image.img} alt={`carousel-img-${index}`} style={{width: '100%', height: '450px'}}/>
+                    <img className='carousel-img' src={image.img} alt={`carousel-img-${index}`} style={{width: '100%'}}/>
                 </div>
             ))}
         </Slider>

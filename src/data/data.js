@@ -1,27 +1,87 @@
-const InicioPage = [
+const InicioBanner = [
     {
         id: 1,
         titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+        img:'/Inicio/inicio-banner-1.jpg'
     },
     {
         id: 2,
         titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+        img:'/Inicio/inicio-banner-2.jpg'
     },
     {
         id: 3,
         titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    }    
+        img:'/Inicio/inicio-banner-3.jpg'
+    }
 ]
-const ProyectosPage = [
+const InicioProyectos = [
     {
         id: 1,
         titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+        img:'/Inicio/inicio-proyecto-1.jpg'
+    },
+    {
+        id: 2,
+        titulo: '',
+        img:'/Inicio/inicio-proyecto-2.jpg'
+    },
+    {
+        id: 3,
+        titulo: '',
+        img:'/Inicio/inicio-proyecto-3.jpg'
+    },
+    {
+        id: 4,
+        titulo: '',
+        img:'/Inicio/inicio-proyecto-3.jpg'
+    },
+    {
+        id: 5,
+        titulo: '',
+        img:'/Inicio/inicio-proyecto-3.jpg'
     }
 ]
+const InicioEquipo = {
+    img: '/Inicio/inicio-equipo.jpg'
+}
+const InicioTestimonios = [
+    {
+        id: 1,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-1.jpg'
+    },
+    {
+        id: 2,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-2.jpg'
+    },
+    {
+        id: 3,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-3.jpg'
+    },
+    {
+        id: 4,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-4.jpg'
+    },
+    {
+        id: 5,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-5.jpg'
+    },
+    {
+        id: 6,
+        titulo: '',
+        img:'/Inicio/inicio-testimonio-6.jpg'
+    },
+]
+const InicioContactos = {
+    telefono: '+51 999999999',
+    correo: 'ejemplo@gmail.com',
+    direccion: 'Avenida ejemplo, chiclayo',
+}
 /****************************************/
 /****************************************/
 const departamentos = [
@@ -100,7 +160,7 @@ const distritos = [
 ]
 /****************************************/
 /****************************************/
-const proyectos = [
+const ProyectosLista = [
     {
         id: 1,
         informacion: {
@@ -109,14 +169,16 @@ const proyectos = [
             provincia: 1,
             distrito: 2,
             direccion: 'Dirección ejemplo 1',
-            img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0001.jpg',
-            titulo: 'El bosque de pimentel',
+            img: '/Proyecto/1/Proyecto.jpg',
+            titulo: 'EL BOSQUE DE PIMENTEL',
             descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
             estado: "Estreno"
         },
         page:{
-            fondo: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0001.jpg',
-            video: 'https://www.youtube.com/embed/8EbjtG5_FkA'
+            fondo: '/Proyecto/1/Banner.jpg',
+            video: 'https://www.youtube.com/embed/8EbjtG5_FkA',
+            mapa_foto: '/Proyecto/1/Mapa.jpg',
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
         },
         metrajes:[
             '100 m²',
@@ -127,79 +189,79 @@ const proyectos = [
             {
                 id: 1,
                 titulo: "AGUA",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-faucet-drip'
             },
             {
                 id: 2,
                 titulo: "PARQUE",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-tree'
             },
             {
                 id: 3,
                 titulo: "DESAGUE",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-toilet'
             },
             {
                 id: 4,
                 titulo: "VEREDAS",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-person-walking-arrow-right'
             },
             {
                 id: 5,
                 titulo: "LUZ TRIFÁSICA",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-lightbulb'
             },
             {
                 id: 6,
                 titulo: "CALLES AFIRMADAS",
-                img: 'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
+                icon: 'fa-road'
             }
         ],
         fotos: [
             {
                 id: 1,
                 titulo: "Misión y Visión",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0002.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0002.jpg'
             },
             {
                 id: 2,
                 titulo: "Valores",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0003.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0003.jpg'
             },
             {
                 id: 3,
                 titulo: "Beneficios",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0004.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0004.jpg'
             },
             {
                 id: 4,
                 titulo: "Planos",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0005.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0005.jpg'
             },
             {
                 id: 5,
                 titulo: "Mapa",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0006.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0006.jpg'
             },
             {
                 id: 6,
                 titulo: "Referencias",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0007.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0007.jpg'
             },
             {
                 id: 7,
                 titulo: "Referencias",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0008.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0008.jpg'
             },
             {
                 id: 8,
                 titulo: "Título de Propiedad",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0009.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0009.jpg'
             },
             {
                 id: 9,
                 titulo: "Copia Literal",
-                img: '/1/BROCHUR BOSQUE DE PIMENTEL_page-0010.jpg'
+                img: '/Proyecto/1/BROCHUR BOSQUE DE PIMENTEL_page-0010.jpg'
             }
         ],
         promociones: [
@@ -395,43 +457,18 @@ const servicios = [
     }
 ]
 
-const testimonios = [
-    {
-        id: 1,
-        titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    },
-    {
-        id: 2,
-        titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    },
-    {
-        id: 3,
-        titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    },
-    {
-        id: 4,
-        titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    },
-    {
-        id: 5,
-        titulo: '',
-        img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-    }
-]
-
 const Data = {
-    InicioPage,
-    ProyectosPage,
+    InicioBanner,
+    InicioProyectos,
+    InicioEquipo,
+    InicioTestimonios,
+    InicioContactos,
+    
     departamentos,
     provincias,
     distritos,
-    proyectos,
-    servicios,
-    testimonios
+    ProyectosLista,
+    servicios
 }
 
 export default Data

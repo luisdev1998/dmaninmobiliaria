@@ -48,8 +48,10 @@
     margin-top: 100px;
   }
   .space-container{
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 1000px;
+    max-width: 1250px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -74,11 +76,14 @@
   .flex{
     display: flex;
   }
-  .gap-5{
+  .gap-5px{
     gap: 5px !important;
   }
-  .gap-10{
+  .gap-10px{
     gap: 10px !important;
+  }
+  .gap-20px{
+    gap: 20px !important;
   }
   .gap-1em{
     gap: 1em !important;
@@ -104,49 +109,58 @@
   .text-center{
     text-align: center;
   }
-  .horizontal-col-4{
+  .horizontal-col-1{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .horizontal-col-2{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
   }
   .horizontal-col-3{
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  }
+  .horizontal-col-4{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   .horizontal-select-col-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
-    gap: 10px;
   }
 
-  /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-
-  @media screen and (max-width: 1100px) {
-    .horizontal-col-4{
-      grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (max-width: 1100px) {
+  .horizontal-col-4{
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  @media screen and (max-width: 900px) {
-    .horizontal-col-4{
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .horizontal-col-3{
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 900px) {
+  .horizontal-col-4{
+    grid-template-columns: repeat(2, 1fr);
   }
+  .horizontal-col-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gap-2em{
+    gap: 1.5em !important;
+  }
+  .padding-3em{
+    padding: 2em !important;
+  }
+}
 
-  @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /****** NAVBAR *******/
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
@@ -185,20 +199,18 @@
   .main-body{
     margin-top: 70px;
   }
-
-
-
-    .horizontal-col-4{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .horizontal-col-3{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .horizontal-col-2{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .horizontal-select-col-4{
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .horizontal-col-4{
+    grid-template-columns: repeat(1, 1fr);
   }
+  .horizontal-col-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .horizontal-col-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .horizontal-select-col-4{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

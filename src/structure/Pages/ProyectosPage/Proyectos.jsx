@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { faSearch, faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBuilding } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Carousel from "../../../components/Carousel";
 
 function Proyectos(props){
     
@@ -11,7 +10,7 @@ function Proyectos(props){
     const [selectedDistr, setSelectedDistr] = useState(0);
     const [filteredProvs, setFilteredProvs] = useState([]);
     const [filteredDists, setFilteredDists] = useState([]);
-    const [filterProyectos, setFilteredProyectos] = useState(Data.proyectos);
+    const [filterProyectos, setFilteredProyectos] = useState(Data.ProyectosLista);
 
     const handleDepChange = (e) => {
         const depId = parseInt(e.target.value);
@@ -60,101 +59,104 @@ function Proyectos(props){
 
     return(
         <div>
-            <div id='ProyectosBanner'>
-                <Carousel images={Data.ProyectosPage}/>
-            </div>
-            <div id='ProyectosLista' className='space-container'>
-                <div className='text-principal-bold text-size-1 text-center sombra'>
-                    <label className="text-black">BUSCA TU </label>
-                    <label className="text-red">PUNTO IDEAL</label>
-                </div>
-                <div className="line-decorate sombra">
-                    <div className="red"></div>
-                </div>
-                
-                <div className="horizontal-select-col-4" style={{marginBottom:"30px"}}>
-                    <div>
-                        <label className="text-secundario-regular text-size-4">DEPARTAMENTO</label>
-                        <select value={selectedDep} onChange={handleDepChange} className="text-secundario-regular text-size-4 text-red  sombra" style={{width:"100%"}}>
-                            {
-                                Data.departamentos.map(dep => (
-                                    <option key={dep.id} value={dep.id}>{dep.nombre}</option>
-                                ))
-                            }
-                        </select>
+            <div id='ProyectosLista' className="flex horizontal-center">
+                <div className='space-container'>
+                    <div className='text-principal-bold text-size-1 text-center sombra'>
+                        <label className="text-black">BUSCA TU </label>
+                        <label className="text-red">PUNTO IDEAL</label>
                     </div>
-
-                    <div>
-                        <label className="text-secundario-regular text-size-4">PROVINCIA</label>
-                        <select value={selectedProv} onChange={handleProvChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
-                            {
-                                filteredProvs.length > 0 ? (
-                                    filteredProvs.map(prov => (
-                                        <option key={prov.id} value={prov.id}>{prov.nombre}</option>
+                    <div className="line-decorate sombra">
+                        <div className="red"></div>
+                    </div>
+                    
+                    <div className="horizontal-select-col-4 gap-1em" style={{marginBottom:"30px"}}>
+                        <div>
+                            <label className="text-secundario-regular text-size-4">DEPARTAMENTO</label>
+                            <select value={selectedDep} onChange={handleDepChange} className="text-secundario-regular text-size-4 text-red  sombra" style={{width:"100%"}}>
+                                {
+                                    Data.departamentos.map(dep => (
+                                        <option key={dep.id} value={dep.id}>{dep.nombre}</option>
                                     ))
-                                ) : (
-                                    <option value="0" disabled></option>
-                                )
-                            }
-                        </select>
+                                }
+                            </select>
+                        </div>
+
+                        <div>
+                            <label className="text-secundario-regular text-size-4">PROVINCIA</label>
+                            <select value={selectedProv} onChange={handleProvChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
+                                {
+                                    filteredProvs.length > 0 ? (
+                                        filteredProvs.map(prov => (
+                                            <option key={prov.id} value={prov.id}>{prov.nombre}</option>
+                                        ))
+                                    ) : (
+                                        <option value="0" disabled></option>
+                                    )
+                                }
+                            </select>
+                        </div>
+
+                        <div>
+                            <label className="text-secundario-regular text-size-4">DISTRITO</label>
+                            <select value={selectedDistr} onChange={handleDistrChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
+                                {
+                                    filteredDists.length > 0 ? (
+                                        filteredDists.map(dist => (
+                                            <option key={dist.id} value={dist.id}>{dist.nombre}</option>
+                                        ))
+                                    ) : (
+                                        <option value="0" disabled></option>
+                                    )
+                                }
+                            </select>
+                        </div>
+
+                        <button className="btn red text-white text-secundario-bold text-size-4 sombra" onClick={buscarProyectos}>
+                            <FontAwesomeIcon icon={faSearch}/> BUSCAR
+                        </button>
                     </div>
 
-                    <div>
-                        <label className="text-secundario-regular text-size-4">DISTRITO</label>
-                        <select value={selectedDistr} onChange={handleDistrChange} className="text-secundario-regular text-size-4 text-red sombra" style={{width:"100%"}}>
-                            {
-                                filteredDists.length > 0 ? (
-                                    filteredDists.map(dist => (
-                                        <option key={dist.id} value={dist.id}>{dist.nombre}</option>
-                                    ))
-                                ) : (
-                                    <option value="0" disabled></option>
+                    <div className='flex row-direction horizontal-center horizontal-col-3 gap-20px'>
+                        {
+                            filterProyectos.map((element, index) => {
+                                return(
+                                    <a 
+                                    key={index} 
+                                    className="card white sombra flex column-direction"
+                                    onClick={() => window.open("/Proyectos/"+element.id,"_self")}
+                                    style={{cursor:"pointer"}}
+                                    >
+                                        <img className="sombra" src={element.informacion.img}/>
+                                        <div className="flex column-direction gap-10px padding-1em" style={{flex:1}}>
+                                            <div className="text-secundario-regular text-red text-size-3">
+                                                <FontAwesomeIcon icon={faBuilding}/> {element.informacion.estado}
+                                            </div>
+                                            <div className="text-secundario-bold text-center text-black text-size-3">
+                                                {element.informacion.titulo}
+                                            </div>
+                                            <div className="text-secundario-regular text-black flex gap-5px text-size-4">
+                                                <label>Metrajes: </label>
+                                                {
+                                                    element.metrajes.map((metraje, index) => {
+                                                        return(
+                                                            <label className="metraje text-size-4" key={index}>{metraje}</label>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                            <div className="line-decorate-text gray-light"></div>
+                                            <div className="text-secundario-regular text-gray text-size-5" style={{flex:1}}>
+                                                {element.informacion.descripcion}
+                                            </div>
+                                            <button className="btn red text-secundario-bold text-white text-size-4 sombra">
+                                                Más Información
+                                            </button>
+                                        </div>
+                                    </a>
                                 )
-                            }
-                        </select>
+                            })
+                        }
                     </div>
-
-                    <button className="btn red text-white text-secundario-bold text-size-4 sombra" onClick={buscarProyectos}>
-                        <FontAwesomeIcon icon={faSearch}/> BUSCAR
-                    </button>
-                </div>
-
-                <div className='flex row-direction horizontal-center horizontal-col-4'>
-                    {
-                        filterProyectos.map((element, index) => {
-                            return(
-                                <a key={index} className="card white sombra flex column-direction gap-10" onClick={() => window.open("/Proyectos/"+element.id,"_self")}>
-                                    <div className="card-estado dark-red">
-                                        <label className="text-secundario-regular text-white text-size-4 sombra">{element.informacion.estado}</label>
-                                    </div>
-                                    <img src={element.informacion.img} width={"100%"} height={200}/>
-                                    <div className="text-secundario-regular text-red text-size-4">
-                                        <FontAwesomeIcon icon={faMapMarker}/> {element.informacion.direccion}
-                                    </div>
-                                    <div className="text-secundario-regular text-black text-size-3">
-                                        {element.informacion.titulo}
-                                    </div>
-                                    <div className="text-secundario-regular text-black flex gap-5 text-size-4">
-                                        <label>Metrajes: </label>
-                                        {
-                                            element.metrajes.map((metraje, index) => {
-                                                return(
-                                                    <label className="metraje text-size-4" key={index}>{metraje}</label>
-                                                )
-                                            })
-                                        }
-                                    </div>
-                                    <div className="line-decorate-text gray-light"></div>
-                                    <div className="text-secundario-regular text-gray text-size-5" style={{flex:1}}>
-                                        {element.informacion.descripcion}
-                                    </div>
-                                    <button className="btn red text-secundario-bold text-white text-size-4 sombra">
-                                        Más Información
-                                    </button>
-                                </a>
-                            )
-                        })
-                    }
                 </div>
             </div>
         </div>

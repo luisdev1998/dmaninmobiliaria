@@ -1,7 +1,3 @@
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-const defaultCenter = {
-    lat: 41.3851, lng: 2.1734
-}
 function Constructora(){
     return(
         <div className=''>
