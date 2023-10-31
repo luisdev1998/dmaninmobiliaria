@@ -27,9 +27,25 @@ function ProyectosInfo(props){
     };
     const [mapa,setMapa] = useState(1);
 
+    const [nombre,setNombre] = useState('');
+    const [telefono,setTelefono] = useState('');
+    const [email,setEmail] = useState('');
+    const [dni,setDni] = useState('');
+
+    const handleNombreChange = (e) => setNombre(e.target.value);
+    const handleTelefonoChange = (e) => setTelefono(e.target.value);
+    const handleEmailChange = (e) => setEmail(e.target.value);
+    const handleDniChange = (e) => setDni(e.target.value);
+
+    const createWhatsAppLink = () => {
+        const mensaje = `Hola, soy ${nombre} con teléfono ${telefono}, con email ${email} y dni ${dni}. Deseo más información del proyecto ${Info.informacion.titulo}`;
+        const encodedMensaje = encodeURIComponent(mensaje);
+        return `https://wa.me/51933334533?text=${encodedMensaje}`;
+    };
+
     return(
-        <div>
-            <div id="ProyectosInfoBanner" className="flex horizontal-center" style={{backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("+Info.page.fondo+")"}}>
+        <>
+            <section id="ProyectosInfoBanner" className="flex horizontal-center" style={{backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("+Info.page.fondo+")"}}>
                 <div className="space-container flex horizontal-col-2 gap-2em">
                     <div className="flex column-direction gap-10px">
                         <label className="text-principal-bold text-red sombra text-size-2">Conoce el Proyecto</label>
@@ -48,21 +64,21 @@ function ProyectosInfo(props){
                         <div className="text-principal-bold text-size-3 text-white text-center sombra">Solicito mas informacion del proyecto "{Info.informacion.titulo}"</div>
                         <div className="flex column-direction gap-1em text-size-4" style={{height:"100%"}}>
                             <div className="flex horizontal-col-2 gap-1em">
-                                <input className="padding-10px sombra text-white" placeholder="Nombres*"/>
-                                <input className="padding-10px sombra text-white" placeholder="Apellidos*"/>
+                                <input className="padding-10px sombra text-white" placeholder="Nombres*" onChange={handleNombreChange} />
+                                <input className="padding-10px sombra text-white" placeholder="Apellidos*" onChange={handleTelefonoChange} />
                             </div>
                             <div className="flex horizontal-col-2 gap-1em">
-                                <input className="padding-10px sombra text-white" placeholder="DNI*"/>
-                                <input className="padding-10px sombra text-white" placeholder="Celular*"/>
+                                <input className="padding-10px sombra text-white" placeholder="DNI*" onChange={handleEmailChange} />
+                                <input className="padding-10px sombra text-white" placeholder="Celular*" onChange={handleDniChange} />
                             </div>
                             <input className="padding-10px sombra text-white" placeholder="Correo Electrónico*"/>
-                            <button className="btn white text-secundario-bold text-size-3 text-red sombra">ENVIAR</button>
+                            <a className="btn white text-center text-secundario-bold text-size-4 text-red sombra" href={createWhatsAppLink()} target="_blank">ENVIAR</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
-            <div id="ProyectosInfoDescuento" className="flex horizontal-center">
+            <section id="ProyectosInfoDescuento" className="flex horizontal-center">
                 <div className='space-container'>
                     <div className='text-principal-bold text-size-1 text-center sombra'>
                         <label className="text-black">DESCUENTOS </label>
@@ -75,9 +91,9 @@ function ProyectosInfo(props){
                         <img src="/promocion.PNG"/>
                     </div>
                 </div>
-            </div>
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
-            <div id='ProyectosInfoFotos' className="flex horizontal-center">
+            <section id='ProyectosInfoFotos' className="flex horizontal-center">
                 <div className='space-container'>
                     <div className='text-principal-bold text-size-1 text-center sombra'>
                         <label className="text-red">CONOCENOS</label>
@@ -103,9 +119,9 @@ function ProyectosInfo(props){
                     }
                     </div>
                 </div>
-            </div>
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-            <div id='ProyectosBeneficios' className="flex horizontal-center">
+            <section id='ProyectosBeneficios' className="flex horizontal-center">
                 <div className='space-container'>
                     <div className='text-principal-bold text-size-1 text-center sombra'>
                         <label className="text-red">BENEFICIOS</label>
@@ -128,26 +144,25 @@ function ProyectosInfo(props){
                     }
                     </div>
                 </div>
-            </div>
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-            <div id='ProyectosPromociones' className="flex horizontal-center">
-            <div className='space-container'>
-                <div className='text-principal-bold text-size-1 text-center sombra'>
-                    <label className="text-white">PROMOCIONES</label>
+            <section id='ProyectosPromociones' className="flex horizontal-center">
+                <div className='space-container'>
+                    <div className='text-principal-bold text-size-1 text-center sombra'>
+                        <label className="text-white">PROMOCIONES</label>
+                    </div>
+                    <div className="line-decorate sombra">
+                        <div className="white"></div>
+                    </div>
+                    <div className="flex horizontal-col-1 gap-2em">
+                    <div className="sombra text-center carousel">
+                        <Carousel images={Info.promociones}/>
+                    </div>
+                    </div>
                 </div>
-                <div className="line-decorate sombra">
-                    <div className="white"></div>
-                </div>
-                <div className="flex horizontal-col-1 gap-2em">
-                  <div className="sombra text-center carousel">
-                    <Carousel images={Info.promociones}/>
-                  </div>
-                </div>
-            </div>
-            </div>
-
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-            <div id='ProyectosUbicacion' className="flex horizontal-center">
+            <section id='ProyectosUbicacion' className="flex horizontal-center">
                 <div className='space-container'>
                     <div className='text-principal-bold text-size-1 text-center sombra'>
                         <label className="text-red">UBICACION</label>
@@ -189,7 +204,7 @@ function ProyectosInfo(props){
                         </iframe>
                     }
                 </div>
-            </div>
+            </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
             <Modal
                 isOpen={modalIsOpen}
@@ -198,7 +213,7 @@ function ProyectosInfo(props){
                 >
                     <img src={imagen} style={{width:"100%",height:"500px"}}/>
             </Modal>
-        </div>
+        </>
     )
 }
 

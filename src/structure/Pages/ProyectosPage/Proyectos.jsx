@@ -59,7 +59,7 @@ function Proyectos(props){
 
     return(
         <div>
-            <div id='ProyectosLista' className="flex horizontal-center">
+            <section id='ProyectosLista' className="flex horizontal-center">
                 <div className='space-container'>
                     <div className='text-principal-bold text-size-1 text-center sombra'>
                         <label className="text-black">BUSCA TU </label>
@@ -158,7 +158,7 @@ function Proyectos(props){
                         }
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

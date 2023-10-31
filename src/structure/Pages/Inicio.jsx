@@ -34,7 +34,33 @@ function Inicio(props){
             </div>
           </section>
 {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='InicioEquipo' className="flex horizontal-center">
+          <section id='InicioPromocion' className="flex horizontal-center">
+            <div className='space-container'>
+              <div className='text-principal-bold text-size-1 text-center sombra'>
+                <div className="text-black">¡APROVECHA </div>
+                <div className="text-red">35% DESCUENTO!</div>
+              </div>
+              <div className="line-decorate sombra">
+                <div className="red"></div>
+              </div>
+              <div className="flex horizontal-col-2 gap-2em">
+                <div className="text-center">
+                  <img src="/Inicio/Descuento.jpg" className="card sombra" style={{width:"100%"}}/>
+                </div>
+                <div className="card red padding-1em sombra flex column-direction gap-1em">
+                  <div className="flex text-center vertical-center column-direction sombra" style={{flex:1}}>
+                    <img src="/logo-blanco.png" style={{maxWidth:"100px"}}/>
+                    <label className="text-white text-size-3 text-principal-bold">Si realizas una compra al contado, llévate un súper descuento del 35%</label>
+                  </div>
+                  <video className="card sombra" style={{width:"100%"}} controls>
+                    <source src="/Inicio/Video.mp4" type="video/mp4"/>
+                  </video>
+                </div>
+              </div>
+            </div>
+          </section>
+{/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+          <section id='InicioEquipo' className="flex horizontal-center">
             <div className='space-container'>
               <div className='text-principal-bold text-size-1 text-center sombra'>
                 <label className="text-black">NUESTRO </label>
@@ -44,19 +70,19 @@ function Inicio(props){
                 <div className="red"></div>
               </div>
               <div className="text-center">
-                <label className="text-principal-regular text-black text-size-2">Conoce el equipo de ventas, que se encarga de brindarte el mejor servicio y asesorías para que puedas agilizar el proceso y papeleos para la obtención de tu lote.</label>
+                <label className="text-principal-regular text-black text-size-2">{Data.InicioEquipo.descripcion}</label>
               </div>
               <br/>
               <br/>
               <img className="sombra" src={Data.InicioEquipo.img}/>
             </div>
-          </div>
+          </section>
 {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='InicioTestimonios' className="flex horizontal-center">
+          <section id='InicioTestimonios' className="flex horizontal-center">
             <div className='space-container'>
                 <div className="flex horizontal-col-2 gap-2em">
                   <div className="sombra text-center carousel">
-                    <Carousel images={Data.InicioTestimonios}/>
+                    <Carousel images={Data.InicioTestimonios.fotos}/>
                   </div>
                   <div className="flex column-direction">
                     <div className='text-principal-bold text-size-1 text-center sombra'>
@@ -66,14 +92,14 @@ function Inicio(props){
                       <div className="white"></div>
                     </div>
                     <label className="text-principal-regular text-white text-size-2">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt eaque voluptates sapiente quis quae fugit libero odio quo ducimus quisquam porro quia ullam ipsam dolorum, dolore tempore ipsa. Officiis?
+                      {Data.InicioTestimonios.descripcion}
                     </label>
                   </div>
                 </div>
             </div>
-          </div>
+          </section>
 {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-          <div id='InicioContactos' className="flex horizontal-center">
+          <section id='InicioContactos' className="flex horizontal-center">
             <div className='space-container'>
               <div className='text-principal-bold text-size-1 text-center sombra'>
                 <label className="text-black">NUESTROS </label>
@@ -83,24 +109,20 @@ function Inicio(props){
                 <div className="red"></div>
               </div>
               <div className='flex row-direction horizontal-center horizontal-col-3 gap-2em'>
-                <div className='text-red text-center'>
-                  <i className="fa-solid fa-phone text-size-1 sombra fa-beat"/>
-                  <p className="text-red text-secundario-bold text-size-3 sombra">CONTÁCTANOS</p>
-                  <div className="text-black text-secundario-regular text-size-3">Teléfono: {Data.InicioContactos.telefono}</div>
-                </div>
-                <div className='text-red text-center'>
-                  <i className="fa-solid fa-envelope text-size-1 sombra fa-beat"/>
-                  <p className="text-red text-secundario-bold text-size-3 sombra">ESCRÍBENOS</p>
-                  <div className="text-black text-secundario-regular text-size-3">{Data.InicioContactos.correo}</div>
-                </div>
-                <div className='text-red text-center'>
-                  <i className="fa-solid fa-map text-size-1 sombra fa-beat"/>
-                  <p className="text-red text-secundario-bold text-size-3 sombra">UBICACIÓN</p>
-                  <div className="text-black text-secundario-regular text-size-3">{Data.InicioContactos.direccion}</div>
-                </div>
+                {
+                  Data.InicioContactos.map((element,index) => {
+                    return(
+                      <div key={index} className='text-red text-center'>
+                        <i className={"fa-solid "+element.icon+" text-size-1 sombra fa-beat"}/>
+                        <p className="text-red text-secundario-bold text-size-4 sombra">{element.titulo}</p>
+                        <div className="text-black text-secundario-bold text-size-4">{element.descripcion}</div>
+                      </div>
+                    )
+                  })
+                }
               </div>
             </div>
-          </div>
+          </section>
 {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
         </div>
     )

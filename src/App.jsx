@@ -4,7 +4,6 @@ import Footer from './structure/Footer.jsx';
 import FloatingButton from './components/FloatingButton.jsx';
 import Inicio from './structure/Pages/Inicio.jsx';
 import Proyectos from './structure/Pages/ProyectosPage/Proyectos.jsx';
-import QuienesSomos from './structure/Pages/Quienessomos.jsx';
 import Constructora from './structure/Pages/Constructora.jsx';
 import ProyectosInfo from './structure/Pages/ProyectosPage/ProyectosInfo.jsx';
 
@@ -14,18 +13,17 @@ function App() {
 
   return (
     <Router>
-      <Header></Header>
+      <Header Data={Data}></Header>
       <div className='main-body'>
         <Routes>
           <Route path="/" element={<Inicio Data={Data} /> } />
           <Route path="/proyectos" element={<Proyectos Data={Data} /> } />
           <Route path="/proyectos/:id" element={<ProyectosInfo Data={Data}/>} />
-          <Route path="/quienes-somos" element={<QuienesSomos />} />
-          <Route path="/constructora" element={<Constructora />} />
+          <Route path="/constructora" element={<Constructora Data={Data}/>} />
         </Routes>
       </div>
-      <FloatingButton></FloatingButton>
-      <Footer></Footer>
+      <FloatingButton Data={Data}></FloatingButton>
+      <Footer Data={Data}></Footer>
     </Router>
   )
 }

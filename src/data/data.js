@@ -1,86 +1,154 @@
+const Whatsapp = 'https://wa.link/onsojp'
+/****************************************/
+/****************************************/
+const FooterRedes = [
+    {
+        icon: 'fa-facebook',
+        url: 'https://www.facebook.com/dmaninmobiliaria'
+    },
+    {
+        icon: 'fa-youtube',
+        url: 'https://www.youtube.com/@dmaninmobiliariaconstructo7986'
+    },
+    {
+        icon: 'fa-instagram',
+        url: 'https://www.instagram.com/dmaninmobiliaria/'
+    },
+    {
+        icon: 'fa-tiktok',
+        url: 'https://www.tiktok.com/@dman_inmobiliaria'
+    }
+]
+/****************************************/
+/****************************************/
 const InicioBanner = [
     {
-        id: 1,
         titulo: '',
         img:'/Inicio/inicio-banner-1.jpg'
     },
     {
-        id: 2,
         titulo: '',
         img:'/Inicio/inicio-banner-2.jpg'
     },
     {
-        id: 3,
         titulo: '',
         img:'/Inicio/inicio-banner-3.jpg'
     }
 ]
 const InicioProyectos = [
     {
-        id: 1,
         titulo: '',
         img:'/Inicio/inicio-proyecto-1.jpg'
     },
     {
-        id: 2,
         titulo: '',
         img:'/Inicio/inicio-proyecto-2.jpg'
     },
     {
-        id: 3,
         titulo: '',
         img:'/Inicio/inicio-proyecto-3.jpg'
     },
     {
-        id: 4,
         titulo: '',
         img:'/Inicio/inicio-proyecto-3.jpg'
     },
     {
-        id: 5,
         titulo: '',
         img:'/Inicio/inicio-proyecto-3.jpg'
     }
 ]
 const InicioEquipo = {
+    descripcion: 'Conoce el equipo de ventas, que se encarga de brindarte el mejor servicio y asesorías para que puedas agilizar el proceso y papeleos para la obtención de tu lote.',
     img: '/Inicio/inicio-equipo.jpg'
 }
-const InicioTestimonios = [
+const InicioTestimonios = {
+    descripcion: 'Nuestro principal objetivo es ayudarles a cumplir su sueño de vivienda propia. Por ello, nos esforzamos en ofrecer un servicio de calidad, atención personalizada y soluciones a medida para cada uno de nuestros clientes.',
+    fotos: [
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-1.jpg'
+        },
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-2.jpg'
+        },
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-3.jpg'
+        },
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-4.jpg'
+        },
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-5.jpg'
+        },
+        {
+            titulo: '',
+            img:'/Inicio/inicio-testimonio-6.jpg'
+        }
+    ]
+}
+const InicioContactos = [
     {
-        id: 1,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-1.jpg'
+        icon: 'fa-phone',
+        titulo: 'CONTÁCTANOS',
+        descripcion: '+51 933334533 / 074-604746'
     },
     {
-        id: 2,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-2.jpg'
+        icon: 'fa-envelope',
+        titulo: 'ESCRÍBENOS',
+        descripcion: 'dmanindustriasperu@gmail.com'
     },
     {
-        id: 3,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-3.jpg'
-    },
-    {
-        id: 4,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-4.jpg'
-    },
-    {
-        id: 5,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-5.jpg'
-    },
-    {
-        id: 6,
-        titulo: '',
-        img:'/Inicio/inicio-testimonio-6.jpg'
-    },
+        icon: 'fa-map',
+        titulo: 'UBICACIÓN',
+        descripcion: 'Francisco Cabrera #682 - Chiclayo'
+    }
 ]
-const InicioContactos = {
-    telefono: '+51 933334533 / 074-604746',
-    correo: 'ejemplo@gmail.com',
-    direccion: 'Francisco Cabrera #682 - Chiclayo',
+/****************************************/
+/****************************************/
+const Constructora = {
+    banner: '/Constructora/Banner.jpg',
+    titulo: 'Realiza con nosotros mejor inversión de futuro a largo plazo!',
+    video: '/Constructora/Video.mp4',
+    descripcion: 'Somos una empresa con más de 2 años de experiencia, brindando solidez y confianza en su futuro proyecto de vida adquiriendo lotes o construcción de su hogar. Contamos con la infraestructa y equipo adecuado para poder ofrecerle al cliente la mejor experiencia.',
+    mision: '',
+    vision: '',
+    valores: '',
+    servicios: [
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        },
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        },
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        },
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        },
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        },
+        {
+            icon: '',
+            titulo: '',
+            descripcion: ''
+        }
+    ]
 }
 /****************************************/
 /****************************************/
@@ -834,6 +902,10 @@ const ProyectosLista = [
 ]
 
 const Data = {
+    Whatsapp,
+
+    FooterRedes,
+
     InicioBanner,
     InicioProyectos,
     InicioEquipo,
@@ -843,7 +915,9 @@ const Data = {
     departamentos,
     provincias,
     distritos,
-    ProyectosLista
+    ProyectosLista,
+
+    Constructora
 }
 
 export default Data
