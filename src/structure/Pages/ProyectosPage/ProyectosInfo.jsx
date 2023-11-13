@@ -28,17 +28,19 @@ function ProyectosInfo(props){
     const [mapa,setMapa] = useState(1);
 
     const [nombre,setNombre] = useState('');
+    const [apellido,setApellido] = useState('');
     const [telefono,setTelefono] = useState('');
     const [email,setEmail] = useState('');
     const [dni,setDni] = useState('');
 
     const handleNombreChange = (e) => setNombre(e.target.value);
+    const handleApellidoChange = (e) => setApellido(e.target.value);
     const handleTelefonoChange = (e) => setTelefono(e.target.value);
     const handleEmailChange = (e) => setEmail(e.target.value);
     const handleDniChange = (e) => setDni(e.target.value);
 
     const createWhatsAppLink = () => {
-        const mensaje = `Hola, soy ${nombre} con teléfono ${telefono}, con email ${email} y dni ${dni}. Deseo más información del proyecto ${Info.informacion.titulo}`;
+        const mensaje = `Hola, soy ${nombre} ${apellido} con teléfono ${telefono}, con email ${email} y dni ${dni}. Deseo más información del proyecto ${Info.informacion.titulo}`;
         const encodedMensaje = encodeURIComponent(mensaje);
         return `https://wa.me/51933334533?text=${encodedMensaje}`;
     };
@@ -65,13 +67,13 @@ function ProyectosInfo(props){
                         <div className="flex column-direction gap-1em text-size-4" style={{height:"100%"}}>
                             <div className="flex horizontal-col-2 gap-1em">
                                 <input className="padding-10px sombra text-white" placeholder="Nombres*" onChange={handleNombreChange} />
-                                <input className="padding-10px sombra text-white" placeholder="Apellidos*" onChange={handleTelefonoChange} />
+                                <input className="padding-10px sombra text-white" placeholder="Apellidos*" onChange={handleApellidoChange} />
                             </div>
                             <div className="flex horizontal-col-2 gap-1em">
-                                <input className="padding-10px sombra text-white" placeholder="DNI*" onChange={handleEmailChange} />
-                                <input className="padding-10px sombra text-white" placeholder="Celular*" onChange={handleDniChange} />
+                                <input className="padding-10px sombra text-white" placeholder="DNI*" onChange={handleDniChange} />
+                                <input className="padding-10px sombra text-white" placeholder="Celular*" onChange={handleTelefonoChange} />
                             </div>
-                            <input className="padding-10px sombra text-white" placeholder="Correo Electrónico*"/>
+                            <input className="padding-10px sombra text-white" placeholder="Correo Electrónico*" on onChange={handleEmailChange}/>
                             <a className="btn white text-center text-secundario-bold text-size-4 text-red sombra" href={createWhatsAppLink()} target="_blank">ENVIAR</a>
                         </div>
                     </div>
