@@ -241,22 +241,20 @@ const ProyectosLista = [
             departamento: 1,
             provincia: 1,
             distrito: 2,
-            direccion: 'Dirección ejemplo 1',
+            direccion: 'La Pradera',
             img: '/Proyecto/1/Proyecto.jpg',
             titulo: 'EL BOSQUE DE PIMENTEL',
-            descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
-            estado: "Estreno"
+            descripcion: "Proyecto Bosque de Pimentel ubicado en La Pradera, Pimentel a 2 min de la Universidad San Martín y a 5 minutos del resto de universidades.",
+            estado: "50% de avance de obras"
         },
         page:{
             fondo: '/Proyecto/1/Banner.jpg',
             video: 'https://www.youtube.com/embed/8EbjtG5_FkA',
             mapa_foto: '/Proyecto/1/Mapa.jpg',
-            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.9470641480393!2d-79.89671242500485!3d-6.776297793220613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDYnMzQuNyJTIDc5wrA1MyczOC45Ilc!5e0!3m2!1ses-419!2spe!4v1700698368307!5m2!1ses-419!2spe'
         },
         metrajes:[
-            '100 m²',
-            '100 m²',
-            '100 m²'
+            '72 m²'
         ],
         beneficios: [
             {
@@ -498,22 +496,20 @@ const ProyectosLista = [
             departamento: 1,
             provincia: 1,
             distrito: 3,
-            direccion: 'Dirección ejemplo 1',
+            direccion: 'Villa Cusupe - Monsefú',
             img: '/Proyecto/3/Proyecto.jpg',
             titulo: 'VILLA CUSUPE',
-            descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
-            estado: "Estreno"
+            descripcion: 'Bella Urbanización "Villa Cúsupe" ubicada en Monsefú a 2 miutos de la plaza central.',
+            estado: "90% de avance de obras"
         },
         page:{
             fondo: '/Proyecto/3/Banner.jpg',
             video: 'https://www.youtube.com/embed/8EbjtG5_FkA',
             mapa_foto: '/Proyecto/3/Mapa.jpg',
-            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.073905181567!2d-79.86078992500387!3d-6.881749993117163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTInNTQuMyJTIDc5wrA1MScyOS42Ilc!5e0!3m2!1ses-419!2spe!4v1700698263247!5m2!1ses-419!2spe'
         },
         metrajes:[
-            '100 m²',
-            '100 m²',
-            '100 m²'
+            '120 m²'
         ],
         beneficios: [
             {
@@ -649,22 +645,20 @@ const ProyectosLista = [
             departamento: 1,
             provincia: 1,
             distrito: 4,
-            direccion: 'Dirección ejemplo 1',
+            direccion: 'Chacupe, La Victoria',
             img: '/Proyecto/4/Proyecto.jpg',
             titulo: 'VILLA ROSARIO',
-            descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
+            descripcion: 'Nuevo Proyecto Urbano "Villa Rosario" ubicado en Chacupe, La Victoria, a 1 minuto de la Av. Grau.',
             estado: "Estreno"
         },
         page:{
             fondo: '/Proyecto/4/Banner.jpg',
             video: 'https://www.youtube.com/embed/8EbjtG5_FkA',
             mapa_foto: '/Proyecto/4/Mapa.jpg',
-            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3961.4541954939687!2d-79.8675435!3d-6.836021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce51659092853%3A0x342efb475d7423a8!2sVilla%20Rosario!5e0!3m2!1sen!2spe!4v1700698071895!5m2!1sen!2spe'
         },
         metrajes:[
-            '100 m²',
-            '100 m²',
-            '100 m²'
+            '98 m²'
         ],
         beneficios: [
             {
