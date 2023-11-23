@@ -44,11 +44,10 @@ function Proyectos(props){
         setSelectedDistr(distrvId);
     };
     const buscarProyectos = () => {
-        console.log(selectedDep + " - " + selectedProv  + " - " + selectedDistr);
         if(selectedDep === 0){
-            setFilteredProyectos(Data.Proyectos);
+            setFilteredProyectos(Data.ProyectosLista);
         }else{
-            const filter = Data.Proyectos.filter(d => 
+            const filter = Data.ProyectosLista.filter(d => 
                 d.informacion.departamento === selectedDep && 
                 d.informacion.provincia === selectedProv && 
                 d.informacion.distrito === selectedDistr
