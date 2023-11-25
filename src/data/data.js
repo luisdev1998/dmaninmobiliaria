@@ -50,11 +50,11 @@ const InicioProyectos = [
     },
     {
         titulo: '',
-        img:'/Inicio/inicio-proyecto-3.jpg'
+        img:'/Inicio/inicio-proyecto-4.jpg'
     },
     {
         titulo: '',
-        img:'/Inicio/inicio-proyecto-3.jpg'
+        img:'/Inicio/inicio-proyecto-5.jpg'
     }
 ]
 const InicioEquipo = {
