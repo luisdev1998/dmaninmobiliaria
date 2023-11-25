@@ -378,7 +378,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/2/Banner.jpg',
-            video: 'https://www.youtube.com/embed/kSRuGPZueDk',
+            video: 'https://www.youtube.com/embed/8JMg_u97dco',
             mapa_foto: '/Proyecto/2/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
         },
