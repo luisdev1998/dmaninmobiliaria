@@ -79,21 +79,24 @@ function ProyectosInfo(props){
                     </div>
                 </div>
             </section>
-            {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
-            <section id="ProyectosInfoDescuento" className="flex horizontal-center">
-                <div className='space-container'>
-                    <div className='text-principal-bold text-size-1 text-center sombra'>
-                        <label className="text-black">DESCUENTOS </label>
-                        <label className="text-red">IDEALES</label>
+            {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
+            {
+                Info.informacion.descuento != '' ?
+                <section id="ProyectosInfoDescuento" className="flex horizontal-center">
+                    <div className='space-container'>
+                        <div className='text-principal-bold text-size-1 text-center sombra'>
+                            <label className="text-black">DESCUENTOS </label>
+                            <label className="text-red">IDEALES</label>
+                        </div>
+                        <div className="line-decorate sombra">
+                            <div className="red"></div>
+                        </div>
+                        <div className="text-center sombra">
+                            <img src={Info.informacion.descuento}/>
+                        </div>
                     </div>
-                    <div className="line-decorate sombra">
-                        <div className="red"></div>
-                    </div>
-                    <div className="text-center sombra">
-                        <img src="/promocion.PNG"/>
-                    </div>
-                </div>
-            </section>
+                </section> : <></>
+            }
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}            
             <section id='ProyectosInfoFotos' className="flex horizontal-center">
                 <div className='space-container'>
@@ -148,21 +151,25 @@ function ProyectosInfo(props){
                 </div>
             </section>
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
-            <section id='ProyectosPromociones' className="flex horizontal-center">
-                <div className='space-container'>
-                    <div className='text-principal-bold text-size-1 text-center sombra'>
-                        <label className="text-white">PROMOCIONES</label>
+            {
+                Info.promociones.Count > 0 ?
+                <section id='ProyectosPromociones' className="flex horizontal-center">
+                    <div className='space-container'>
+                        <div className='text-principal-bold text-size-1 text-center sombra'>
+                            <label className="text-white">PROMOCIONES</label>
+                        </div>
+                        <div className="line-decorate sombra">
+                            <div className="white"></div>
+                        </div>
+                        <div className="flex horizontal-col-1 gap-2em">
+                        <div className="sombra text-center carousel">
+                            <Carousel images={Info.promociones}/>
+                        </div>
+                        </div>
                     </div>
-                    <div className="line-decorate sombra">
-                        <div className="white"></div>
-                    </div>
-                    <div className="flex horizontal-col-1 gap-2em">
-                    <div className="sombra text-center carousel">
-                        <Carousel images={Info.promociones}/>
-                    </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+                : <></>
+            }
             {/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */}
             <section id='ProyectosUbicacion' className="flex horizontal-center">
                 <div className='space-container'>

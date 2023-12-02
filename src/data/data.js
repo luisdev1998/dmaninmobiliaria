@@ -243,6 +243,7 @@ const ProyectosLista = [
             distrito: 2,
             direccion: 'La Pradera',
             img: '/Proyecto/1/Proyecto.jpg',
+            descuento: '',
             titulo: 'EL BOSQUE DE PIMENTEL',
             descripcion: "Proyecto Bosque de Pimentel ubicado en La Pradera, Pimentel a 2 min de la Universidad San Martín y a 5 minutos del resto de universidades.",
             estado: "50% de avance de obras"
@@ -335,33 +336,7 @@ const ProyectosLista = [
                 img: '/Proyecto/1/Conocenos-9.jpg'
             }
         ],
-        promociones: [
-            {
-                id: 1,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 2,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 3,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 4,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 5,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            }
-        ]
+        promociones: []
     },
     {
         id: 2,
@@ -371,6 +346,7 @@ const ProyectosLista = [
             provincia: 1,
             distrito: 3,
             direccion: 'Dirección ejemplo 1',
+            descuento: '',
             img: '/Proyecto/2/Proyecto.jpg',
             titulo: 'EL BOSQUE DE VALLE HERMOSO',
             descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
@@ -461,33 +437,7 @@ const ProyectosLista = [
                 img: '/Proyecto/2/Conocenos-9.jpg'
             }
         ],
-        promociones: [
-            {
-                id: 1,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 2,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 3,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 4,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 5,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            }
-        ]
+        promociones: []
     },
     {
         id: 3,
@@ -497,6 +447,7 @@ const ProyectosLista = [
             provincia: 1,
             distrito: 3,
             direccion: 'Villa Cusupe - Monsefú',
+            descuento: '',
             img: '/Proyecto/3/Proyecto.jpg',
             titulo: 'VILLA CUSUPE',
             descripcion: 'Bella Urbanización "Villa Cúsupe" ubicada en Monsefú a 2 miutos de la plaza central.',
@@ -610,33 +561,7 @@ const ProyectosLista = [
                 img: '/Proyecto/3/Conocenos-11.jpg'
             }
         ],
-        promociones: [
-            {
-                id: 1,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 2,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 3,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 4,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 5,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            }
-        ]
+        promociones: []
     },
     {
         id: 4,
@@ -646,6 +571,7 @@ const ProyectosLista = [
             provincia: 1,
             distrito: 4,
             direccion: 'Chacupe, La Victoria',
+            descuento: '',
             img: '/Proyecto/4/Proyecto.jpg',
             titulo: 'VILLA ROSARIO',
             descripcion: 'Nuevo Proyecto Urbano "Villa Rosario" ubicado en Chacupe, La Victoria, a 1 minuto de la Av. Grau.',
@@ -739,33 +665,7 @@ const ProyectosLista = [
                 img: '/Proyecto/4/Conocenos-10.jpg'
             }
         ],
-        promociones: [
-            {
-                id: 1,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 2,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 3,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 4,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 5,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            }
-        ]
+        promociones: []
     },
     {
         id: 5,
@@ -775,6 +675,7 @@ const ProyectosLista = [
             provincia: 1,
             distrito: 1,
             direccion: 'Dirección ejemplo 1',
+            descuento: '',
             img: '/Proyecto/5/Proyecto.jpg',
             titulo: 'VILLA FLORES',
             descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
@@ -865,33 +766,7 @@ const ProyectosLista = [
             //     img: '/Proyecto/5/Conocenos-10.jpg'
             // }
         ],
-        promociones: [
-            {
-                id: 1,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 2,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 3,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 4,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            },
-            {
-                id: 5,
-                titulo: '',
-                img:'https://static.wixstatic.com/media/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg/v1/fill/w_1016,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_89c38a26ca684fc8ad383d2a53b31a22~mv2.jpg'
-            }
-        ]
+        promociones: []
     }
 ]
 
