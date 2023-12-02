@@ -349,8 +349,8 @@ const ProyectosLista = [
             descuento: '',
             img: '/Proyecto/2/Proyecto.jpg',
             titulo: 'EL BOSQUE DE VALLE HERMOSO',
-            descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
-            estado: "Estreno"
+            descripcion: "Calles afirmadas y falta el cableado para la tercera y primera etapa. A 5 minutos del centro de Monsefú",
+            estado: "75% de avance de obre"
         },
         page:{
             fondo: '/Proyecto/2/Banner.jpg',
@@ -359,9 +359,8 @@ const ProyectosLista = [
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
         },
         metrajes:[
-            '100 m²',
-            '100 m²',
-            '100 m²'
+            '120 m²',
+            '160 m²'
         ],
         beneficios: [
             {
@@ -674,12 +673,12 @@ const ProyectosLista = [
             departamento: 1,
             provincia: 1,
             distrito: 1,
-            direccion: 'Dirección ejemplo 1',
+            direccion: 'La Victoria - Chacupe Bajo',
             descuento: '',
             img: '/Proyecto/5/Proyecto.jpg',
             titulo: 'VILLA FLORES',
-            descripcion: "Lorem Ipsum is simply dummy text of the printing only five centuries",
-            estado: "Estreno"
+            descripcion: "A 5 minutos del centro Poblado sagrado corazón de Jesús donde hay paradero de colectivos y prácticamente cerca al proyecto Villa flores.",
+            estado: "80% de avance de obra"
         },
         page:{
             fondo: '/Proyecto/5/Banner.jpg',
@@ -688,9 +687,7 @@ const ProyectosLista = [
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
         },
         metrajes:[
-            '100 m²',
-            '100 m²',
-            '100 m²'
+            '90 m²'
         ],
         beneficios: [
             {
