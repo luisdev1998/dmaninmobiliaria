@@ -270,7 +270,7 @@ const ProyectosLista = [
             },
             {
                 id: 3,
-                titulo: "DESAGUE",
+                titulo: "DESAGÜE",
                 icon: 'fa-toilet'
             },
             {
@@ -474,7 +474,7 @@ const ProyectosLista = [
             },
             {
                 id: 3,
-                titulo: "DESAGUE",
+                titulo: "DESAGÜE",
                 icon: 'fa-toilet'
             },
             {
