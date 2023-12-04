@@ -21,7 +21,7 @@ function Header(props) {
             <li><Link className='text-secundario-regular hover sombra' to='/constructora'>Constructora</Link></li>
             <label> |</label>
             <li className='navbar-button red to-white sombra'><Link className='text-secundario-bold text-white' to='/Proyectos'>Nuestros Proyectos</Link></li>
-            <li className='navbar-button white to-red sombra'><a className='text-secundario-bold text-red' href={Data.Whatsapp} target="_blank">Contactanos</a></li>
+            <li className='navbar-button white to-red sombra'><a className='text-secundario-bold text-red' href={Data.Whatsapp} target="_blank">Contáctanos</a></li>
           </ul>
         </div>
       </div>
