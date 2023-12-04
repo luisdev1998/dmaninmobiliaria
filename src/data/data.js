@@ -350,7 +350,7 @@ const ProyectosLista = [
             img: '/Proyecto/2/Proyecto.jpg',
             titulo: 'EL BOSQUE DE VALLE HERMOSO',
             descripcion: "Calles afirmadas y falta el cableado para la tercera y primera etapa. A 5 minutos del centro de Monsefú",
-            estado: "75% de avance de obre"
+            estado: "75% de avance de obra"
         },
         page:{
             fondo: '/Proyecto/2/Banner.jpg',
@@ -449,7 +449,7 @@ const ProyectosLista = [
             descuento: '',
             img: '/Proyecto/3/Proyecto.jpg',
             titulo: 'VILLA CUSUPE',
-            descripcion: 'Bella Urbanización "Villa Cúsupe" ubicada en Monsefú a 2 miutos de la plaza central.',
+            descripcion: 'Bella Urbanización "Villa Cúsupe" ubicada en Monsefú a 2 minutos de la plaza central.',
             estado: "90% de avance de obras"
         },
         page:{
@@ -677,7 +677,7 @@ const ProyectosLista = [
             descuento: '',
             img: '/Proyecto/5/Proyecto.jpg',
             titulo: 'VILLA FLORES',
-            descripcion: "A 5 minutos del centro Poblado sagrado corazón de Jesús donde hay paradero de colectivos y prácticamente cerca al proyecto Villa flores.",
+            descripcion: "A 5 minutos del centro Poblado sagrado corazón de Jesús donde hay paradero de colectivos y prácticamente cerca al proyecto Villa Flores.",
             estado: "80% de avance de obra"
         },
         page:{
