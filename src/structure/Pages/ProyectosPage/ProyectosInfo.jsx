@@ -63,7 +63,7 @@ function ProyectosInfo(props){
                         </iframe>
                     </div>
                     <div className="card red flex column-direction gap-2em padding-3em sombra">
-                        <div className="text-principal-bold text-size-3 text-white text-center sombra">Solicito mas informacion del proyecto "{Info.informacion.titulo}"</div>
+                        <div className="text-principal-bold text-size-3 text-white text-center sombra">Solicito mas información del proyecto "{Info.informacion.titulo}"</div>
                         <div className="flex column-direction gap-1em text-size-4" style={{height:"100%"}}>
                             <div className="flex horizontal-col-2 gap-1em">
                                 <input className="padding-10px sombra text-white" placeholder="Nombres*" onChange={handleNombreChange} />

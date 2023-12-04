@@ -356,7 +356,7 @@ const ProyectosLista = [
             fondo: '/Proyecto/2/Banner.jpg',
             video: 'https://www.youtube.com/embed/8JMg_u97dco',
             mapa_foto: '/Proyecto/2/Mapa.jpg',
-            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2726463728663!2d-79.88635769999999!3d-6.8578897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce5338cfd55d9%3A0x6f3f5229610a1570!2sBOSQUE%20DE%20VALLE%20HERMOSO%2CMONSEFU!5e0!3m2!1ses-419!2spe!4v1701709659564!5m2!1ses-419!2spe'
         },
         metrajes:[
             '120 m²',
@@ -684,7 +684,7 @@ const ProyectosLista = [
             fondo: '/Proyecto/5/Banner.jpg',
             video: 'https://www.youtube.com/embed/octybMbxiXY',
             mapa_foto: '/Proyecto/5/Mapa.jpg',
-            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.5885753652738!2d-77.07572628754102!3d-12.068821544332323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c915ab65b3f5%3A0xf52c0690fb3f1b33!2sAv.%20Mariano%20H.%20Cornejo%202256%2C%20Lima%2015088!5e0!3m2!1ses-419!2spe!4v1686710019002!5m2!1ses-419!2spe'
+            mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.660779469014!2d-79.86783659999999!3d-6.8110517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef182a8dcc59%3A0x71917ddf7e72f24!2sLotizaci%C3%B3n%20Villa%20Flores!5e0!3m2!1ses-419!2spe!4v1701709749875!5m2!1ses-419!2spe'
         },
         metrajes:[
             '90 m²'
