@@ -8,7 +8,7 @@ const FooterRedes = [
     },
     {
         icon: 'fa-youtube',
-        url: 'https://www.youtube.com/@dmaninmobiliariaconstructo7986'
+        url: 'https://www.youtube.com/@Dmaninmobiliariaoficial'
     },
     {
         icon: 'fa-instagram',
@@ -94,7 +94,7 @@ const InicioContactos = [
     {
         icon: 'fa-phone',
         titulo: 'CONTÁCTANOS',
-        descripcion: '+51 933334533 / 074-604746'
+        descripcion: '+51 933334533'
     },
     {
         icon: 'fa-envelope',
@@ -250,7 +250,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/1/Banner.jpg',
-            video: 'https://www.youtube.com/embed/8JMg_u97dco',
+            video: 'https://www.youtube.com/embed/47jCIedj3h8',
             mapa_foto: '/Proyecto/1/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.9470641480393!2d-79.89671242500485!3d-6.776297793220613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDYnMzQuNyJTIDc5wrA1MyczOC45Ilc!5e0!3m2!1ses-419!2spe!4v1700698368307!5m2!1ses-419!2spe'
         },
@@ -354,7 +354,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/2/Banner.jpg',
-            video: 'https://www.youtube.com/embed/8JMg_u97dco',
+            video: 'https://www.youtube.com/embed/jW6xEcKbTeM',
             mapa_foto: '/Proyecto/2/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2726463728663!2d-79.88635769999999!3d-6.8578897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce5338cfd55d9%3A0x6f3f5229610a1570!2sBOSQUE%20DE%20VALLE%20HERMOSO%2CMONSEFU!5e0!3m2!1ses-419!2spe!4v1701709659564!5m2!1ses-419!2spe'
         },
@@ -578,7 +578,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/4/Banner.jpg',
-            video: 'https://www.youtube.com/embed/U9VVB-eiWBE',
+            video: 'https://www.youtube.com/embed/QK0HW9Oi4ww',
             mapa_foto: '/Proyecto/4/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3961.4541954939687!2d-79.8675435!3d-6.836021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ce51659092853%3A0x342efb475d7423a8!2sVilla%20Rosario!5e0!3m2!1sen!2spe!4v1700698071895!5m2!1sen!2spe'
         },
@@ -682,7 +682,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/5/Banner.jpg',
-            video: 'https://www.youtube.com/embed/octybMbxiXY',
+            video: 'https://www.youtube.com/embed/XcRNZPNyTos',
             mapa_foto: '/Proyecto/5/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.660779469014!2d-79.86783659999999!3d-6.8110517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef182a8dcc59%3A0x71917ddf7e72f24!2sLotizaci%C3%B3n%20Villa%20Flores!5e0!3m2!1ses-419!2spe!4v1701709749875!5m2!1ses-419!2spe'
         },
