@@ -35,16 +35,36 @@ function ProyectosInfo(props) {
 
   const handleNombreChange = (e) => setNombre(e.target.value);
   const handleApellidoChange = (e) => setApellido(e.target.value);
-  const handleTelefonoChange = (e) => setTelefono(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);
-  const handleDniChange = (e) => setDni(e.target.value);
 
-  const createWhatsAppLink = () => {
+  const createWhatsAppLink = (e) => {
+    e.preventDefault();
     const mensaje = `Hola, soy ${nombre} ${apellido} con teléfono ${telefono}, con email ${email} y dni ${dni}. Deseo más información del proyecto ${Info.informacion.titulo}`;
     const encodedMensaje = encodeURIComponent(mensaje);
-    return `https://wa.me/51933334533?text=${encodedMensaje}`;
+    const whatsappURL = `https://wa.me/51933334533?text=${encodedMensaje}`;
+    window.open(whatsappURL, "_blank");
   };
 
+  const handleTelefonoChange = (e) => {
+    const { value } = e.target;
+
+    // Regla: Acepta "+" al inicio, seguido de hasta 8 dígitos (9 caracteres en total)
+    const regex = /^\+?\d{0,8}$/;
+
+    // Si el valor actual cumple con la regla, actualiza el estado
+    if (regex.test(value)) {
+      setTelefono(value);
+    }
+  };
+  const handleDniChange = (e) => {
+    const { value } = e.target;
+    // Acepta solo números y hasta 8 dígitos
+    const regex = /^\d{0,8}$/;
+
+    if (regex.test(value)) {
+      setDni(value);
+    }
+  };
   return (
     <>
       <section
@@ -78,7 +98,8 @@ function ProyectosInfo(props) {
             <div className="text-principal-bold text-size-3 text-white text-center sombra">
               Solicito más información del proyecto "{Info.informacion.titulo}"
             </div>
-            <div
+            <form
+              onSubmit={(e) => createWhatsAppLink(e)}
               className="flex column-direction gap-1em text-size-4"
               style={{ height: "100%" }}
             >
@@ -86,11 +107,17 @@ function ProyectosInfo(props) {
                 <input
                   className="padding-10px sombra text-white"
                   placeholder="Nombres*"
+                  required
+                  maxLength={30}
+                  type="text"
                   onChange={handleNombreChange}
                 />
                 <input
                   className="padding-10px sombra text-white"
                   placeholder="Apellidos*"
+                  required
+                  maxLength={30}
+                  type="text"
                   onChange={handleApellidoChange}
                 />
               </div>
@@ -98,28 +125,36 @@ function ProyectosInfo(props) {
                 <input
                   className="padding-10px sombra text-white"
                   placeholder="DNI*"
+                  value={dni}
+                  required
+                  type="text"
+                  maxLength="8"
                   onChange={handleDniChange}
                 />
                 <input
                   className="padding-10px sombra text-white"
-                  placeholder="Celular*"
+                  type="text"
+                  required
+                  value={telefono}
+                  maxLength="9"
+                  placeholder="Celular"
                   onChange={handleTelefonoChange}
                 />
               </div>
               <input
                 className="padding-10px sombra text-white"
                 placeholder="Correo Electrónico*"
-                on
+                required
+                type="email"
                 onChange={handleEmailChange}
               />
-              <a
+              <button
                 className="btn white text-center text-secundario-bold text-size-4 text-red sombra"
-                href={createWhatsAppLink()}
-                target="_blank"
+                type="submit"
               >
                 ENVIAR
-              </a>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
       </section>
