@@ -37,22 +37,27 @@ const InicioBanner = [
 ]
 const InicioProyectos = [
     {
+        id:3,
         titulo: '',
         img:'/Inicio/inicio-proyecto-1.jpg'
     },
     {
+        id:5,
         titulo: '',
         img:'/Inicio/inicio-proyecto-2.jpg'
     },
     {
+        id:4,
         titulo: '',
         img:'/Inicio/inicio-proyecto-3.jpg'
     },
     {
+        id:2,
         titulo: '',
         img:'/Inicio/inicio-proyecto-4.jpg'
     },
     {
+        id:1,
         titulo: '',
         img:'/Inicio/inicio-proyecto-5.jpg'
     }
@@ -94,7 +99,7 @@ const InicioContactos = [
     {
         icon: 'fa-phone',
         titulo: 'CONTÁCTANOS',
-        descripcion: '+51 933334533'
+        descripcion: '+51 933-334-533'
     },
     {
         icon: 'fa-envelope',
@@ -454,7 +459,7 @@ const ProyectosLista = [
         },
         page:{
             fondo: '/Proyecto/3/Banner.jpg',
-            video: 'https://www.youtube.com/embed/kSRuGPZueDk',
+            video: 'https://www.youtube.com/embed/xrjGQnWn_OM?si=4j0dbZK37v2sAjSj',
             mapa_foto: '/Proyecto/3/Mapa.jpg',
             mapa_google: 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.073905181567!2d-79.86078992500387!3d-6.881749993117163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTInNTQuMyJTIDc5wrA1MScyOS42Ilc!5e0!3m2!1ses-419!2spe!4v1700698263247!5m2!1ses-419!2spe'
         },
